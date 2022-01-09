@@ -8,12 +8,33 @@
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
-
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- plugins:css -->
+        {% include "admin/css.html.twig" %}
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <div class="container-scroller">
+            <!-- partial:partials/_navbar.html -->
+            {% include "admin/navbar.html.twig" %}
+            <!-- partial -->
+            <div class="container-fluid page-body-wrapper">
+                <!-- partial:partials/_sidebar.html -->
+                {% include "admin/sidebar.html.twig" %}
+                <!-- partial -->
+                <div class="main-panel">
+                    {% block body %}{% endblock %}
+                    <!-- content-wrapper ends -->
+                    <!-- partial:partials/_footer.html -->
+                    {% include "admin/footer.html.twig" %}
+                    <!-- partial -->
+                </div>
+                <!-- main-panel ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+        {% include "admin/script.html.twig" %}
     </body>
 </html>

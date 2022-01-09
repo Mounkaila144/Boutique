@@ -1,13 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="bootstap et webpack">
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_09_01_2022_15_09.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.4.xsd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/maps/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/auth/lockscreen-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/auth/login-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/auth/register-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face14.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face16.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face17.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face18.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face19.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face21.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face22.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face23.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face24.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face25.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face26.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face27.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/faces/face9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo-mini.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/chart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/data-table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/documentation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/file-upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/hoverable-collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/off-canvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/js/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/charts/chartjs.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/forms/basic_elements.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/icons/mdi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/samples/lock-screen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/samples/login-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/samples/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/samples/register-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/samples/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/tables/basic-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/ui-features/buttons.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/pages/ui-features/typography.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/partials/_footer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/partials/_navbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/partials/_settings-panel.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/partials/_sidebar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_background.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_demo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_fonts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_layouts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_sidebar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_typography.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/_vertical-wrapper.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_bootstrap-progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_checkbox-radio.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_icons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_lists.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/components/plugin-overrides/_data-tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/landing-screens/_auth.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_animation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_badges.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_blockqoute.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_cards.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/mixins/_misc.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/base/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/base/vendor.bundle.base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/base/vendor.bundle.base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/chart.js/Chart.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/datatables.net/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/css/materialdesignicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/css/materialdesignicons.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/css.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/footer.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/navbar.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/script.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/sidebar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,18 +318,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
       <recent name="C:\wamp64s\www\project\Boutique\public" />
       <recent name="C:\wamp64s\www\project\Boutique\templates" />
       <recent name="C:\wamp64s\www\project\Boutique\templates\video" />
       <recent name="C:\wamp64s\www\project\Boutique\src\Entity" />
-      <recent name="C:\wamp64s\www\project\Boutique\src\Controller\Admin" />
     </key>
   </component>
   <component name="RunManager">
@@ -214,6 +349,7 @@
       <updated>1641646788563</updated>
       <workItem from="1641646791190" duration="24130000" />
       <workItem from="1641730459144" duration="2550000" />
+      <workItem from="1641737395570" duration="2722000" />
     </task>
     <servers />
   </component>
