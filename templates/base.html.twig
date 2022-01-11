@@ -16,6 +16,11 @@
         {% endblock %}
     </head>
     <body>
+    <script>    $(document).ready(function() {
+            $('#multiple-checkboxes').multiselect({
+                includeSelectAllOption: true,
+            });
+        });</script>
         <div class="container-scroller">
             <!-- partial:partials/_navbar.html -->
             {% include "admin/navbar.html.twig" %}
@@ -35,6 +40,7 @@
             </div>
             <!-- page-body-wrapper ends -->
         </div>
+
         {% include "admin/script.html.twig" %}
     </body>
 </html>
