@@ -1,10 +1,10 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Video index{% endblock %}
+{% block title %}film index{% endblock %}
 
 {% block body %}
     <h2>
-        Serie
+        film
     </h2>
 
     <div class="col-lg-12 grid-margin stretch-card">
@@ -18,22 +18,18 @@
                             <th>Nom</th>
                             <th>Genre</th>
                             <th>Type</th>
-                            <th>Saison</th>
-                            <th>Episode</th>
                             <th>Modifier</th>
                         </tr>
                         </thead>
                         <tbody>
-                        {% for video in videos %}
+                        {% for film in films %}
                             <tr>
-                                <td>{{ video.id }}</td>
-                                <td>{{ video.nom }}</td>
-                                <td>{{ video.genre }}</td>
-                                <td>{{ video.type ? video.type|join(', ') : '' }}</td>
-                                <td>{{ video.saison }}</td>
-                                <td>{{ video.episode }}</td>
+                                <td>{{ film.id }}</td>
+                                <td>{{ film.nom }}</td>
+                                <td>{{ film.genre }}</td>
+                                <td>{{ film.type ? film.type|join(', ') : '' }}</td>
                                 <td>
-                                    <a href="{{ path('video_edit', {'id': video.id}) }}"><button type="submit" class="btn btn-primary me-2">Moifier</button></a>
+                                    <a href="{{ path('film_edit', {'id': film.id}) }}"><button type="submit" class="btn btn-primary me-2">Moifier</button></a>
                                 </td>
                             </tr>
                         {% else %}
@@ -49,5 +45,5 @@
     </div>
 
 
-    <a href="{{ path('video_new') }}"><button type="submit" class="btn btn-primary me-2">Ajouter</button></a>
+    <a href="{{ path('film_new') }}"><button type="submit" class="btn btn-primary me-2">Ajouter</button></a>
 {% endblock %}
