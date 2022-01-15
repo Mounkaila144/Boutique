@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
+
+    {% block javascripts %}
+        {{ encore_entry_script_tags('app') }}
+    {% endblock %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <!-- CSS -->
+    <style>
+        body{
+            margin:0
+        }
+        #maCarte{
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+{% block body %}{% endblock %}
+<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+<script>
+    //  On initialise la carte
+    var carte = L.map('maCarte').setView([13.5539143, 2.1305520], 20);
+
+    // On charge les "tuiles"
+    L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
+        // Il est toujours bien de laisser le lien vers la source des données
+        attribution: 'données © <a href="//osm.org/copyright">OpenStreetMap</a>/ODbL - rendu <a href="//openstreetmap.fr">OSM France</a>',
+
+    }).addTo(carte);
+
+    let xmlhttp = new XMLHttpRequest();
+
+    xmlhttp.onreadystatechange = () => {
+        // La transaction est terminée ?
+        if(xmlhttp.readyState == 4){
+            // Si la transaction est un succès
+            if(xmlhttp.status == 200){
+                // On traite les données reçues
+                let donnees = JSON.parse(xmlhttp.responseText)
+
+                // On boucle sur les données (ES8)
+                Object.entries(donnees.user).forEach(user => {
+                    // Ici j'ai une seule user
+                    // On crée un marqueur pour l'user
+                    let marker = L.marker([user[1].lat, user[1].lon]).addTo(carte)
+                    marker.bindPopup(user[1].nom)
+                })
+            }else{
+                console.log(xmlhttp.statusText);
+            }
+        }
+    }
+
+    xmlhttp.open("GET", "https://127.0.0.1:8000/user/");
+
+    xmlhttp.send(null);
+</script>
+</body>
+</html>

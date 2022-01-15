@@ -1,0 +1,54 @@
+{% extends 'localisation.html.twig' %}
+
+{% block title %}user index{% endblock %}
+
+{% block body %}
+    <div id="maCarte"></div>
+
+    <h2>
+        user
+    </h2>
+
+    <div class="col-lg-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <div class="table-responsive pt-3">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Email</th>
+                            <th>Nom</th>
+                            <th>prenom</th>
+                            <th>Adresse</th>
+                            <th>Localisation</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for user in users %}
+                            <tr>
+                                <td>{{ user.id }}</td>
+                                <td>{{ user.email }}</td>
+                                <td>{{ user.nom }}</td>
+                                <td>{{ user.prenom }}</td>
+                                <td>{{ user.adresse}}</td>
+                                <td>
+                                    <a href="{{ path('user_show', {'id': user.id}) }}"><button type="submit" class="btn btn-primary me-2">Localiser</button></a>
+                                </td>
+                                <td>
+                                    <a href="{{ path('user_edit', {'id': user.id}) }}"><button type="submit" class="btn btn-primary me-2">Suprimer</button></a>
+                                </td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td colspan="7">no records found</td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

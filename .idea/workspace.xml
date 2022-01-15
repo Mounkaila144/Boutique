@@ -1,12 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="configuation du theme administrateur">
+    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="fin e la creation des entity&#10;serie et film">
+      <change afterPath="$PROJECT_DIR$/public/leaft/images/layers-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/images/layers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-icon-2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-shadow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scrip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/scriptl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/localisation.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +57,7 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="composer" />
+        <entry key="$PROJECT_DIR$" value="test" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -170,6 +194,7 @@
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
       <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/verify-email-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="23PruPCYyT2JMfzg0DNIEuVKFpy" />
@@ -185,17 +210,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
       <recent name="C:\wamp64s\www\project\Boutique\public" />
       <recent name="C:\wamp64s\www\project\Boutique\templates" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates\video" />
-      <recent name="C:\wamp64s\www\project\Boutique\src\Entity" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates\user" />
+      <recent name="C:\wamp64s\www\project\Boutique\src\Form" />
+      <recent name="C:\wamp64s\www\project\Boutique\src\Controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -215,7 +240,11 @@
       <workItem from="1641646791190" duration="24130000" />
       <workItem from="1641730459144" duration="2550000" />
       <workItem from="1641737395570" duration="27075000" />
-      <workItem from="1641810669771" duration="567000" />
+      <workItem from="1641810669771" duration="13886000" />
+      <workItem from="1641908621063" duration="1450000" />
+      <workItem from="1641910106880" duration="10808000" />
+      <workItem from="1641976038827" duration="12566000" />
+      <workItem from="1642167047386" duration="5010000" />
     </task>
     <task id="LOCAL-00001" summary="configuation du theme administrateur">
       <created>1641740276322</created>
@@ -224,7 +253,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641740276322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="je vais differentier les serie et film">
+      <created>1641892461381</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1641892461396</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fin e la creation des entity&#10;serie et film">
+      <created>1641894411512</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1641894411512</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +287,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="configuation du theme administrateur" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuation du theme administrateur" />
+    <MESSAGE value="je vais differentier les serie et film" />
+    <MESSAGE value="fin e la creation des entity&#10;serie et film" />
+    <option name="LAST_COMMIT_MESSAGE" value="fin e la creation des entity&#10;serie et film" />
   </component>
 </project>
