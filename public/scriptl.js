@@ -3,7 +3,7 @@ document.addEventListener('DOMContenLoaded',valeur=function () {
     var lati = user.dataset.isLat;
     var long = user.dataset.isLon;
     return a = long + "," + lati;
-
+}
 
 // On attend que le DOM soit chargé
     let v = valeur()
@@ -14,5 +14,5 @@ document.addEventListener('DOMContenLoaded',valeur=function () {
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
     }).addTo(mymap);
-}
+
 

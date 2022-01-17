@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/type')]
+#[Route('admin/type',name:'admin_')]
 class TypeController extends AbstractController
 {
     #[Route('/', name: 'type_index', methods: ['GET'])]

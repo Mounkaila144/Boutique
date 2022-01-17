@@ -1,36 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="fin e la creation des entity&#10;serie et film">
-      <change afterPath="$PROJECT_DIR$/public/leaft/images/layers-2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/images/layers.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-icon-2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/images/marker-shadow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet-src.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/leaflet.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scrip.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/scriptl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/localisation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="affichage des marqueur de ma base">
+      <change afterPath="$PROJECT_DIR$/public/leaft/loca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/leaft/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/loca.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scrip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scrip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scriptl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scriptl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/localisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/localisation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,11 +203,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\wamp64s\www\project\Boutique\public" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates\user" />
-      <recent name="C:\wamp64s\www\project\Boutique\src\Form" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
       <recent name="C:\wamp64s\www\project\Boutique\src\Controller" />
+      <recent name="C:\wamp64s\www\project\Boutique\public\leaft" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates" />
+      <recent name="C:\wamp64s\www\project\Boutique\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +231,11 @@
       <workItem from="1641908621063" duration="1450000" />
       <workItem from="1641910106880" duration="10808000" />
       <workItem from="1641976038827" duration="12566000" />
-      <workItem from="1642167047386" duration="5010000" />
+      <workItem from="1642167047386" duration="7459000" />
+      <workItem from="1642272065210" duration="991000" />
+      <workItem from="1642276209506" duration="3000" />
+      <workItem from="1642276827258" duration="40276000" />
+      <workItem from="1642369224563" duration="15022000" />
     </task>
     <task id="LOCAL-00001" summary="configuation du theme administrateur">
       <created>1641740276322</created>
@@ -267,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641894411512</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="affichage des marqueur de ma base">
+      <created>1642239223792</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1642239223792</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +287,18 @@
     <MESSAGE value="configuation du theme administrateur" />
     <MESSAGE value="je vais differentier les serie et film" />
     <MESSAGE value="fin e la creation des entity&#10;serie et film" />
-    <option name="LAST_COMMIT_MESSAGE" value="fin e la creation des entity&#10;serie et film" />
+    <MESSAGE value="affichage des marqueur de ma base" />
+    <option name="LAST_COMMIT_MESSAGE" value="affichage des marqueur de ma base" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/templates/admin/navbar.html.twig</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

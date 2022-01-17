@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/film')]
+#[Route('admin/film',name:'admin_')]
 class FilmController extends AbstractController
 {
     #[Route('/', name: 'film_index', methods: ['GET'])]

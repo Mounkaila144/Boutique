@@ -1,9 +1,19 @@
-{% extends 'localisation.html.twig' %}
+{% extends 'loca.html.twig' %}
 
 {% block title %}user index{% endblock %}
 
 {% block body %}
-    <div id="maCarte"></div>
+    {% for user in users %}
+        {% set data={
+                lat:user.lat,
+                lon:user.lon,
+                nom:user.nom
+               }
+        %}
+        <div data-coordo='{{ data|json_encode|replace({"'": "&#39;"})|raw }}'></div>
+    {% endfor %}
+
+    <div id="detailsMap"></div>
 
     <h2>
         user
@@ -27,6 +37,7 @@
                         </thead>
                         <tbody>
                         {% for user in users %}
+
                             <tr>
                                 <td>{{ user.id }}</td>
                                 <td>{{ user.email }}</td>

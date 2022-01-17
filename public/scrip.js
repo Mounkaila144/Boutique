@@ -3,7 +3,7 @@ let marqueur
 // On attend que le DOM soit chargé
 window.onload = () => {
     // Nous initialisons la carte et nous la centrons sur Paris
-    mymap = L.map('detailsMap').setView([13.5539143, 2.1305520], 20);
+    mymap = L.map('detailsMap').setView([13.5539143,2.1305520], 20);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
