@@ -25,6 +25,9 @@ class Article
     #[ORM\Column(type: 'integer')]
     private $quantiteRestant;
 
+    #[ORM\Column(type: 'string', length: 100)]
+    private $nom;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -74,6 +77,18 @@ class Article
     public function setQuantiteRestant(int $quantiteRestant): self
     {
         $this->quantiteRestant = $quantiteRestant;
+
+        return $this;
+    }
+
+    public function getNom(): ?string
+    {
+        return $this->nom;
+    }
+
+    public function setNom(string $nom): self
+    {
+        $this->nom = $nom;
 
         return $this;
     }

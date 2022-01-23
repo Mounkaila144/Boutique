@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CheckboxType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -21,11 +22,8 @@ class SerieType extends AbstractType
             'class' => 'checkbox-inline',
         ],
     ])
-            ->add('genre', ChoiceType::class,[
-                'choices'  => [
-                    'Serie' => 'serie',
-                    'Film'     => 'film',
-                    'Manga'    => 'manga',],
+            ->add('genre', HiddenType::class,[
+                'data'=>'serie',
             ])
             ->add('type',null, [
                 'attr' => [

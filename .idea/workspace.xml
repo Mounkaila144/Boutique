@@ -1,23 +1,222 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="affichage des marqueur de ma base">
-      <change afterPath="$PROJECT_DIR$/public/leaft/loca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/leaft/map.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/loca.html.twig" afterDir="false" />
+    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/MangaController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MangaType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/article/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/manga/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/user/localisation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Boutique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boutique.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_09_01_2022_15_09.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scrip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scrip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/scriptl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/scriptl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FilmController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SerieController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/TypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/TypeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/maps/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/css/maps/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Black.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Black.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Black.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Black.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Black.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Bold.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Bold.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Bold.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Bold.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Bold.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Light.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Light.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Light.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Light.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Light.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Medium.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Medium.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Medium.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Medium.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Medium.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Regular.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Regular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Regular.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Roboto/Roboto-Regular.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/fonts/Roboto/Roboto-Regular.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/auth/lockscreen-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/auth/lockscreen-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/auth/login-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/auth/login-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/auth/register-bg.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/auth/register-bg.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face23.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face24.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face25.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face26.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face27.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/faces/face9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/faces/face9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo-mini.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/logo-mini.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/images/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/data-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/data-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dataTables.bootstrap4.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/documentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/documentation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/file-upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/file-upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/hoverable-collapse.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/hoverable-collapse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/jquery.cookie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/off-canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/off-canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/images/layers-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/images/layers-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/images/layers.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/images/layers.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/images/marker-icon-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/images/marker-icon-2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/images/marker-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/images/marker-icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/images/marker-shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/images/marker-shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.esm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet-src.esm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.esm.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet-src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet-src.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/leaflet.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/loca.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/loca.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/leaft/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/map.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/charts/chartjs.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/charts/chartjs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/forms/basic_elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/forms/basic_elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/icons/mdi.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/icons/mdi.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/samples/lock-screen.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/samples/lock-screen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/samples/login-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/samples/login-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/samples/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/samples/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/samples/register-2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/samples/register-2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/samples/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/samples/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/tables/basic-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/tables/basic-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/ui-features/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/ui-features/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/pages/ui-features/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/pages/ui-features/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/partials/_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/partials/_footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/partials/_navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/partials/_navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/partials/_settings-panel.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/partials/_settings-panel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/partials/_sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/partials/_sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scrip.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scrip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scriptl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scriptl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_background.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_demo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_fonts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_functions.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_layouts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_layouts.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_navbar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_sidebar.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/_vertical-wrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_vertical-wrapper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_bootstrap-progress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_bootstrap-progress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_checkbox-radio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_checkbox-radio.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_dropdown.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_forms.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_lists.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_lists.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/_tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/components/plugin-overrides/_data-tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/components/plugin-overrides/_data-tables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/landing-screens/_auth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/landing-screens/_auth.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_animation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_animation.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_badges.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_badges.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_blockqoute.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_blockqoute.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_buttons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_cards.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_cards.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/mixins/_misc.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/mixins/_misc.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/base/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/bootstrap.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/base/vendor.bundle.base.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/base/vendor.bundle.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/chart.js/Chart.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/chart.js/Chart.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/dataTables.bootstrap4.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/datatables.net-bs4/dataTables.bootstrap4.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/datatables.net-bs4/dataTables.bootstrap4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/datatables.net/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/datatables.net/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/css/materialdesignicons.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/css/materialdesignicons.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/css/materialdesignicons.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/css/materialdesignicons.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/fonts/materialdesignicons-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/fonts/materialdesignicons-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/fonts/materialdesignicons-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendors/mdi/fonts/materialdesignicons-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/mdi/fonts/materialdesignicons-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/FilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SerieController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/SerieController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/TypeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/TypeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FilmType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/FilmType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SerieType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/SerieType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/css.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/footer.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/navbar.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/script.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/sidebar.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_delete_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/edit.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/new.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/article/show.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/film/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/film/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/loca.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/loca.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/localisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/localisation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/serie/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/serie/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/_delete_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/_form.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/type/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/type/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/user/show.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,27 +227,21 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <favorite-branches>
-      <branch-storage>
-        <map>
-          <entry type="LOCAL">
-            <value>
-              <list>
-                <branch-info repo="$PROJECT_DIR$" source="composer" />
-              </list>
-            </value>
-          </entry>
-        </map>
-      </branch-storage>
-    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="test" />
+        <entry key="$PROJECT_DIR$" value="react" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -125,6 +318,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/http-client" />
       <path value="$PROJECT_DIR$/vendor/symfony/intl" />
       <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation" />
@@ -179,15 +373,11 @@
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
-      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
-      <path value="$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle" />
       <path value="$PROJECT_DIR$/vendor/symfonycasts/verify-email-bundle" />
+      <path value="$PROJECT_DIR$/vendor/laminas/laminas-code" />
     </include_path>
   </component>
-  <component name="ProjectId" id="23PruPCYyT2JMfzg0DNIEuVKFpy" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="23p5VI33ByinUkDc7UQ3hvXPv5Y" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -195,19 +385,27 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64s\www\project\Boutique\templates\default" />
       <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
-      <recent name="C:\wamp64s\www\project\Boutique\src\Controller" />
-      <recent name="C:\wamp64s\www\project\Boutique\public\leaft" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates" />
-      <recent name="C:\wamp64s\www\project\Boutique\public" />
+      <recent name="C:\wamp64s\www\project\Boutique\src\Form" />
+      <recent name="C:\wamp64s\www\project\Boutique\src\Controller\Admin" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates\admin\article" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64s\www\project\Boutique\public\Admin" />
+      <recent name="C:\wamp64s\www\project\Boutique\assets\js\Components" />
+      <recent name="C:\wamp64s\www\project\Boutique\src\Controller\Admin" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
+      <recent name="C:\wamp64s\www\project\Boutique\templates\admin\template" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,53 +417,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1fe2f419-3dd0-47b0-86fc-834f9f0fd0c1" name="Default Changelist" comment="" />
-      <created>1641646788563</created>
+      <changelist id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="" />
+      <created>1642418209776</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1641646788563</updated>
-      <workItem from="1641646791190" duration="24130000" />
-      <workItem from="1641730459144" duration="2550000" />
-      <workItem from="1641737395570" duration="27075000" />
-      <workItem from="1641810669771" duration="13886000" />
-      <workItem from="1641908621063" duration="1450000" />
-      <workItem from="1641910106880" duration="10808000" />
-      <workItem from="1641976038827" duration="12566000" />
-      <workItem from="1642167047386" duration="7459000" />
-      <workItem from="1642272065210" duration="991000" />
-      <workItem from="1642276209506" duration="3000" />
-      <workItem from="1642276827258" duration="40276000" />
-      <workItem from="1642369224563" duration="15022000" />
+      <updated>1642418209776</updated>
+      <workItem from="1642418211107" duration="53037000" />
+      <workItem from="1642713555730" duration="910000" />
+      <workItem from="1642799354980" duration="808000" />
+      <workItem from="1642883497973" duration="1083000" />
+      <workItem from="1642884817705" duration="2093000" />
     </task>
-    <task id="LOCAL-00001" summary="configuation du theme administrateur">
-      <created>1641740276322</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1641740276322</updated>
-    </task>
-    <task id="LOCAL-00002" summary="je vais differentier les serie et film">
-      <created>1641892461381</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1641892461396</updated>
-    </task>
-    <task id="LOCAL-00003" summary="fin e la creation des entity&#10;serie et film">
-      <created>1641894411512</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1641894411512</updated>
-    </task>
-    <task id="LOCAL-00004" summary="affichage des marqueur de ma base">
-      <created>1642239223792</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1642239223792</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,22 +445,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="configuation du theme administrateur" />
-    <MESSAGE value="je vais differentier les serie et film" />
-    <MESSAGE value="fin e la creation des entity&#10;serie et film" />
-    <MESSAGE value="affichage des marqueur de ma base" />
-    <option name="LAST_COMMIT_MESSAGE" value="affichage des marqueur de ma base" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/templates/admin/navbar.html.twig</url>
-          <line>7</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
