@@ -1,0 +1,13 @@
+{
+  "@context": "\/api\/contexts\/Video",
+  "@id": "\/api\/videos\/3",
+  "@type": "Video",
+  "id": 3,
+  "nom": "vandam",
+  "genre": "serie",
+  "saison": 5,
+  "episode": 4,
+  "type": [
+    "\/api\/types\/1"
+  ]
+}

@@ -1,0 +1,1117 @@
+{
+  "@context": "\/api\/contexts\/Error",
+  "@type": "hydra:Error",
+  "hydra:title": "An error occurred",
+  "hydra:description": "Invalid IRI \"1\".",
+  "trace": [
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\Serializer\\AbstractItemNormalizer.php",
+      "line": 497,
+      "args": []
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\Serializer",
+      "short_class": "AbstractItemNormalizer",
+      "class": "ApiPlatform\\Core\\Serializer\\AbstractItemNormalizer",
+      "type": "->",
+      "function": "denormalizeRelation",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\Serializer\\AbstractItemNormalizer.php",
+      "line": 467,
+      "args": [
+        [
+          "string",
+          "type"
+        ],
+        [
+          "object",
+          "ApiPlatform\\Core\\Metadata\\Property\\PropertyMetadata"
+        ],
+        [
+          "string",
+          "App\\Entity\\Type"
+        ],
+        [
+          "string",
+          "1"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Type"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ],
+            "cache_key": [
+              "string",
+              "3de6b6273407d8b6929b528529fb8e4c"
+            ],
+            "deserialization_path": [
+              "string",
+              "type"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\Serializer",
+      "short_class": "AbstractItemNormalizer",
+      "class": "ApiPlatform\\Core\\Serializer\\AbstractItemNormalizer",
+      "type": "->",
+      "function": "denormalizeCollection",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\Serializer\\AbstractItemNormalizer.php",
+      "line": 781,
+      "args": [
+        [
+          "string",
+          "type"
+        ],
+        [
+          "object",
+          "ApiPlatform\\Core\\Metadata\\Property\\PropertyMetadata"
+        ],
+        [
+          "object",
+          "Symfony\\Component\\PropertyInfo\\Type"
+        ],
+        [
+          "string",
+          "App\\Entity\\Type"
+        ],
+        [
+          "array",
+          [
+            [
+              "string",
+              "1"
+            ]
+          ]
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Type"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ],
+            "cache_key": [
+              "string",
+              "59385a2a29baf81856d31a2668618565"
+            ],
+            "deserialization_path": [
+              "string",
+              "type"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\Serializer",
+      "short_class": "AbstractItemNormalizer",
+      "class": "ApiPlatform\\Core\\Serializer\\AbstractItemNormalizer",
+      "type": "->",
+      "function": "createAttributeValue",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\Serializer\\AbstractItemNormalizer.php",
+      "line": 421,
+      "args": [
+        [
+          "string",
+          "type"
+        ],
+        [
+          "array",
+          [
+            [
+              "string",
+              "1"
+            ]
+          ]
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Type"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ],
+            "cache_key": [
+              "string",
+              "59385a2a29baf81856d31a2668618565"
+            ],
+            "deserialization_path": [
+              "string",
+              "type"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\Serializer",
+      "short_class": "AbstractItemNormalizer",
+      "class": "ApiPlatform\\Core\\Serializer\\AbstractItemNormalizer",
+      "type": "->",
+      "function": "setAttributeValue",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\serializer\\Normalizer\\AbstractObjectNormalizer.php",
+      "line": 411,
+      "args": [
+        [
+          "object",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "type"
+        ],
+        [
+          "array",
+          [
+            [
+              "string",
+              "1"
+            ]
+          ]
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ],
+            "cache_key": [
+              "string",
+              "59385a2a29baf81856d31a2668618565"
+            ],
+            "deserialization_path": [
+              "string",
+              "type"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer\\Normalizer",
+      "short_class": "AbstractObjectNormalizer",
+      "class": "Symfony\\Component\\Serializer\\Normalizer\\AbstractObjectNormalizer",
+      "type": "->",
+      "function": "denormalize",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\Serializer\\AbstractItemNormalizer.php",
+      "line": 260,
+      "args": [
+        [
+          "array",
+          {
+            "nom": [
+              "string",
+              "vandam"
+            ],
+            "genre": [
+              "string",
+              "serie"
+            ],
+            "saison": [
+              "integer",
+              5
+            ],
+            "episode": [
+              "integer",
+              4
+            ],
+            "type": [
+              "array",
+              [
+                [
+                  "string",
+                  "1"
+                ]
+              ]
+            ]
+          }
+        ],
+        [
+          "string",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ],
+            "cache_key": [
+              "string",
+              "59385a2a29baf81856d31a2668618565"
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\Serializer",
+      "short_class": "AbstractItemNormalizer",
+      "class": "ApiPlatform\\Core\\Serializer\\AbstractItemNormalizer",
+      "type": "->",
+      "function": "denormalize",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\JsonLd\\Serializer\\ItemNormalizer.php",
+      "line": 122,
+      "args": [
+        [
+          "array",
+          {
+            "nom": [
+              "string",
+              "vandam"
+            ],
+            "genre": [
+              "string",
+              "serie"
+            ],
+            "saison": [
+              "integer",
+              5
+            ],
+            "episode": [
+              "integer",
+              4
+            ],
+            "type": [
+              "array",
+              [
+                [
+                  "string",
+                  "1"
+                ]
+              ]
+            ]
+          }
+        ],
+        [
+          "string",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ],
+            "api_denormalize": [
+              "boolean",
+              true
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\JsonLd\\Serializer",
+      "short_class": "ItemNormalizer",
+      "class": "ApiPlatform\\Core\\JsonLd\\Serializer\\ItemNormalizer",
+      "type": "->",
+      "function": "denormalize",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\serializer\\Serializer.php",
+      "line": 238,
+      "args": [
+        [
+          "array",
+          {
+            "nom": [
+              "string",
+              "vandam"
+            ],
+            "genre": [
+              "string",
+              "serie"
+            ],
+            "saison": [
+              "integer",
+              5
+            ],
+            "episode": [
+              "integer",
+              4
+            ],
+            "type": [
+              "array",
+              [
+                [
+                  "string",
+                  "1"
+                ]
+              ]
+            ]
+          }
+        ],
+        [
+          "string",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer",
+      "short_class": "Serializer",
+      "class": "Symfony\\Component\\Serializer\\Serializer",
+      "type": "->",
+      "function": "denormalize",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\serializer\\Serializer.php",
+      "line": 151,
+      "args": [
+        [
+          "array",
+          {
+            "nom": [
+              "string",
+              "vandam"
+            ],
+            "genre": [
+              "string",
+              "serie"
+            ],
+            "saison": [
+              "integer",
+              5
+            ],
+            "episode": [
+              "integer",
+              4
+            ],
+            "type": [
+              "array",
+              [
+                [
+                  "string",
+                  "1"
+                ]
+              ]
+            ]
+          }
+        ],
+        [
+          "string",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer",
+      "short_class": "Serializer",
+      "class": "Symfony\\Component\\Serializer\\Serializer",
+      "type": "->",
+      "function": "deserialize",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\api-platform\\core\\src\\EventListener\\DeserializeListener.php",
+      "line": 106,
+      "args": [
+        [
+          "array",
+          {
+            "nom": [
+              "string",
+              "vandam"
+            ],
+            "genre": [
+              "string",
+              "serie"
+            ],
+            "saison": [
+              "integer",
+              5
+            ],
+            "episode": [
+              "integer",
+              4
+            ],
+            "type": [
+              "array",
+              [
+                [
+                  "string",
+                  "1"
+                ]
+              ]
+            ]
+          }
+        ],
+        [
+          "string",
+          "App\\Entity\\Video"
+        ],
+        [
+          "string",
+          "jsonld"
+        ],
+        [
+          "array",
+          {
+            "operation_type": [
+              "string",
+              "collection"
+            ],
+            "collection_operation_name": [
+              "string",
+              "post"
+            ],
+            "api_allow_update": [
+              "boolean",
+              false
+            ],
+            "resource_class": [
+              "string",
+              "App\\Entity\\Video"
+            ],
+            "iri_only": [
+              "boolean",
+              false
+            ],
+            "input": [
+              "null",
+              null
+            ],
+            "output": [
+              "null",
+              null
+            ],
+            "request_uri": [
+              "string",
+              "\/api\/videos"
+            ],
+            "uri": [
+              "string",
+              "https:\/\/127.0.0.1:8000\/api\/videos"
+            ],
+            "skip_null_values": [
+              "boolean",
+              true
+            ]
+          }
+        ]
+      ]
+    },
+    {
+      "namespace": "ApiPlatform\\Core\\EventListener",
+      "short_class": "DeserializeListener",
+      "class": "ApiPlatform\\Core\\EventListener\\DeserializeListener",
+      "type": "->",
+      "function": "onKernelRequest",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\event-dispatcher\\Debug\\WrappedListener.php",
+      "line": 111,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
+        ],
+        [
+          "string",
+          "kernel.request"
+        ],
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Debug\\TraceableEventDispatcher"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\EventDispatcher\\Debug",
+      "short_class": "WrappedListener",
+      "class": "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener",
+      "type": "->",
+      "function": "__invoke",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\event-dispatcher\\EventDispatcher.php",
+      "line": 230,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
+        ],
+        [
+          "string",
+          "kernel.request"
+        ],
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Debug\\TraceableEventDispatcher"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\EventDispatcher",
+      "short_class": "EventDispatcher",
+      "class": "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+      "type": "->",
+      "function": "callListeners",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\event-dispatcher\\EventDispatcher.php",
+      "line": 59,
+      "args": [
+        [
+          "array",
+          [
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ],
+            [
+              "object",
+              "Symfony\\Component\\EventDispatcher\\Debug\\WrappedListener"
+            ]
+          ]
+        ],
+        [
+          "string",
+          "kernel.request"
+        ],
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\EventDispatcher",
+      "short_class": "EventDispatcher",
+      "class": "Symfony\\Component\\EventDispatcher\\EventDispatcher",
+      "type": "->",
+      "function": "dispatch",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\event-dispatcher\\Debug\\TraceableEventDispatcher.php",
+      "line": 152,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
+        ],
+        [
+          "string",
+          "kernel.request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\EventDispatcher\\Debug",
+      "short_class": "TraceableEventDispatcher",
+      "class": "Symfony\\Component\\EventDispatcher\\Debug\\TraceableEventDispatcher",
+      "type": "->",
+      "function": "dispatch",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\http-kernel\\HttpKernel.php",
+      "line": 128,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpKernel\\Event\\RequestEvent"
+        ],
+        [
+          "string",
+          "kernel.request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handleRaw",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\http-kernel\\HttpKernel.php",
+      "line": 74,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handle",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\http-kernel\\Kernel.php",
+      "line": 202,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ],
+        [
+          "boolean",
+          true
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "Kernel",
+      "class": "Symfony\\Component\\HttpKernel\\Kernel",
+      "type": "->",
+      "function": "handle",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\symfony\\runtime\\Runner\\Symfony\\HttpKernelRunner.php",
+      "line": 35,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Runtime\\Runner\\Symfony",
+      "short_class": "HttpKernelRunner",
+      "class": "Symfony\\Component\\Runtime\\Runner\\Symfony\\HttpKernelRunner",
+      "type": "->",
+      "function": "run",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\autoload_runtime.php",
+      "line": 29,
+      "args": []
+    },
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "require_once",
+      "file": "C:\\xampps\\htdocs\\projet\\Boutique\\public\\index.php",
+      "line": 5,
+      "args": [
+        [
+          "string",
+          "C:\\xampps\\htdocs\\projet\\Boutique\\vendor\\autoload_runtime.php"
+        ]
+      ]
+    }
+  ]
+}

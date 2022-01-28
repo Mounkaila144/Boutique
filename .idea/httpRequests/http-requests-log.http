@@ -1,0 +1,63 @@
+POST https://127.0.0.1:8000/api/videos
+Content-Type: application/ld+json
+
+{
+  "nom": "vandam",
+  "genre": "serie",
+  "saison": 5,
+  "episode": 4,
+  "type": [
+    "api/types/1"
+  ]
+}
+
+<> 2022-01-24T235755.201.json
+
+###
+
+POST https://127.0.0.1:8000/api/videos
+Content-Type: application/ld+json
+
+{
+  "nom": "vandam",
+  "genre": "serie",
+  "saison": 5,
+  "episode": 4,
+  "type": [
+    "1"
+  ]
+}
+
+<> 2022-01-24T235729.400.json
+
+###
+
+POST https://127.0.0.1:8000/api/videos
+Content-Type: application/ld+json
+
+{
+  "nom": "string",
+  "genre": "string",
+  "saison": 0,
+  "episode": 0,
+  "type": [
+    "string"
+  ]
+}
+
+<> 2022-01-24T235412.400.json
+
+###
+
+GET https://127.0.0.1:8000/api/users
+
+<> 2022-01-24T234540.200.json
+
+###
+
+GET https://127.0.0.1:8000/api/videos
+
+<> 2022-01-24T234243.200.json
+
+###
+

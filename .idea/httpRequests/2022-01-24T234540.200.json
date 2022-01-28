@@ -1,0 +1,26 @@
+{
+  "@context": "\/api\/contexts\/User",
+  "@id": "\/api\/users",
+  "@type": "hydra:Collection",
+  "hydra:member": [
+    {
+      "@id": "\/api\/users\/1",
+      "@type": "User",
+      "id": 1,
+      "email": "admin2@gmail.com",
+      "roles": [
+        "ROLE_ADMIN",
+        "ROLE_USER"
+      ],
+      "password": "$2y$13$4XWcLkg5JwaaYvuLm4aS6epd2nojtCbjFya5V.Hd3tYYti55eqziq",
+      "nom": "AllCiner",
+      "prenom": "MKL",
+      "adresse": "citer",
+      "lon": 2.1305590867996,
+      "lat": 13.554037850469,
+      "userIdentifier": "admin2@gmail.com",
+      "verified": false
+    }
+  ],
+  "hydra:totalItems": 1
+}

@@ -1,11 +1,11 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}user index{% endblock %}
+{% block title %}vendeur index{% endblock %}
 
 {% block body %}
 
     <h2>
-        user
+        vendeur
     </h2>
 
 
@@ -22,20 +22,20 @@
                         </tr>
                         </thead>
                         <tbody>
-                        {% for user in users %}
+                        {% for vendeur in vendeurs %}
 
                             <tr>
-                                <td>{{ user.id }}</td>
-                                <td>{{ user.email }}</td>
-                                <td>{{ user.nom }}</td>
-                                <td>{{ user.prenom }}</td>
-                                <td>{{ user.adresse}}</td>
+                                <td>{{ vendeur.id }}</td>
+                                <td>{{ vendeur.email }}</td>
+                                <td>{{ vendeur.nom }}</td>
+                                <td>{{ vendeur.prenom }}</td>
+                                <td>{{ vendeur.adresse}}</td>
                                 <td>
-                                    <a href="{{ path('admin_user_show', {'id': user.id}) }}"><button type="submit" class="btn btn-primary me-2">Localiser</button></a>
+                                    <a href="{{ path('admin_vendeur_show', {'id': vendeur.id}) }}"><button type="submit" class="btn btn-primary me-2">Localiser</button></a>
                                 </td>
                                 <td>
-                                    <form method="post" action="{{ path('admin_user_delete', {'id': user.id}) }}" onsubmit="return confirm('Voulez vous vaiment suprimer?');">
-                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+                                    <form method="post" action="{{ path('admin_vendeur_delete', {'id': vendeur.id}) }}" onsubmit="return confirm('Voulez vous vaiment suprimer?');">
+                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ vendeur.id) }}">
                                         <button type="submit" class="btn btn-danger me-2">Suprimer</button>
                                     </form>                                </td>
                             </tr>

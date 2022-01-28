@@ -1,0 +1,15 @@
+POST https://127.0.0.1:8000/api/videos
+Content-Type: application/ld+json
+
+{
+  "nom": "vandam",
+  "genre": "serie",
+  "saison": 5,
+  "episode": 4,
+  "type": [
+    "api/types/1"
+  ]
+}
+
+###
+GET https://127.0.0.1:8000/api/users

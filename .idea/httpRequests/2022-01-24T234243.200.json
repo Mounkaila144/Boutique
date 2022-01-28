@@ -1,0 +1,48 @@
+{
+  "@context": "\/api\/contexts\/Video",
+  "@id": "\/api\/videos",
+  "@type": "hydra:Collection",
+  "hydra:member": [
+    {
+      "@id": "\/api\/videos\/1",
+      "@type": "Video",
+      "id": 1,
+      "nom": "HARRY POTTER",
+      "genre": "serie",
+      "saison": 8,
+      "episode": 8,
+      "type": [
+        {
+          "@type": "Type",
+          "@id": "_:2186",
+          "id": 1,
+          "nom": "horreur",
+          "videos": [
+            "\/api\/videos\/1"
+          ]
+        }
+      ]
+    },
+    {
+      "@id": "\/api\/videos\/2",
+      "@type": "Video",
+      "id": 2,
+      "nom": "VAMPIIRE",
+      "genre": "serie",
+      "saison": 1,
+      "episode": 1,
+      "type": [
+        {
+          "@type": "Type",
+          "@id": "_:2030",
+          "id": 3,
+          "nom": "GENERIQUE",
+          "videos": [
+            "\/api\/videos\/2"
+          ]
+        }
+      ]
+    }
+  ],
+  "hydra:totalItems": 2
+}
