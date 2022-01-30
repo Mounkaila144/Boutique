@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Entity\User;
 use App\Form\RegistrationFormType;
@@ -15,7 +15,8 @@ use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
 use Symfony\Component\Routing\Annotation\Route;
 use SymfonyCasts\Bundle\VerifyEmail\Exception\VerifyEmailExceptionInterface;
 
-class RegistrationController extends AbstractController
+#[Route('admin/client',name:'admin_')]
+class RegistrationVendeurController extends AbstractController
 {
     private EmailVerifier $emailVerifier;
 
@@ -57,7 +58,7 @@ class RegistrationController extends AbstractController
         }
 
         return $this->render('registration/register.html.twig', [
-            'registrationForm' => $form->createView(['role' => $this->getUser()->getRoles()]),
+            'registrationForm' => $form->createView(),
         ]);
     }
 

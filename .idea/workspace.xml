@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="api platform de api">
-      <change afterPath="$PROJECT_DIR$/public/requet.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/VendeurController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/edit.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/localisation.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="a suprimer">
+      <change afterPath="$PROJECT_DIR$/src/Controller/Admin/RegistrationVendeurController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/Extension/SecurityExtension.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/client/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/client/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/client/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/vendeur/new.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Boutique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boutique.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/controllers.json" beforeDir="false" afterPath="$PROJECT_DIR$/assets/controllers.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20220111095741.php" beforeDir="false" afterPath="$PROJECT_DIR$/migrations/Version20220111095741.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.esm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/leaft/leaflet-src.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/vendors/datatables.net/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/datatables.net/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ClientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/VendeurController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/VendeurController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Type.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Type.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Video.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/template/sidebar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/template/sidebar.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/edit.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/localisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/localisation.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/show.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/client/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/client/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/client/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/vendeur/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/vendeur/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/localisation.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/vendeur/localisation.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/vendeur/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +55,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="react" />
+        <entry key="$PROJECT_DIR$" value="newuser" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -211,6 +204,7 @@
       <path value="$PROJECT_DIR$/vendor/fig/link-util" />
       <path value="$PROJECT_DIR$/vendor/api-platform/core" />
       <path value="$PROJECT_DIR$/vendor/nelmio/cors-bundle" />
+      <path value="$PROJECT_DIR$/vendor/scienta/doctrine-json-functions" />
     </include_path>
   </component>
   <component name="ProjectId" id="23p5VI33ByinUkDc7UQ3hvXPv5Y" />
@@ -222,19 +216,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates/admin/vendeur" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin\vendeur" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin\client" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\src\Form\Extension" />
       <recent name="C:\xampps\htdocs\projet\Boutique\src\Controller\Admin" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates\default" />
-      <recent name="C:\wamp64s\www\project\Boutique\templates\admin" />
-      <recent name="C:\wamp64s\www\project\Boutique\src\Form" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64s\www\project\Boutique\public\Admin" />
@@ -254,6 +249,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.requet#1" />
         <item itemvalue="HTTP Request.requet#1" />
       </list>
     </recent_temporary>
@@ -279,6 +275,8 @@
       <workItem from="1643187353075" duration="639000" />
       <workItem from="1643214687888" duration="836000" />
       <workItem from="1643281816462" duration="8632000" />
+      <workItem from="1643443541505" duration="7619000" />
+      <workItem from="1643485338517" duration="4504000" />
     </task>
     <servers />
   </component>

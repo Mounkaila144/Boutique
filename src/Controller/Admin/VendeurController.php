@@ -18,7 +18,7 @@ class VendeurController extends AbstractController
     public function index(UserRepository $vendeurRepository): Response
     {
         return $this->render('admin/vendeur/index.html.twig', [
-            'vendeurs' => $vendeurRepository->findAll(),
+            'vendeurs' => $vendeurRepository->findByRoleThatSucksLess('VENDEUR'),
         ]);
     }
    #[Route('/localisation', name: 'vendeur_localisation', methods: ['GET'])]
