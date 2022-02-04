@@ -1,3 +1,21 @@
+GET http://aaapi.cgi?q={query}-!{syear},{eyear}-!{snfrate},{enfrate}-!{simdbrate},{eimdbrate}-!{genreid}-!{vtype}-!{audio}-!{subtitle}-!{imdbvotes}-!{downloadable}&t=ns&cl={clist}&st=adv&ob={sortby}&p={page}&sa={andor}
+
+###
+
+GET https://api.betaseries.com/shows/display?id=1
+Accept: application/json
+
+<> 2022-01-30T105923.400.json
+
+###
+
+GET https://api.betaseries.com/shows/display?id=1?key=<3Cec75c3fe5493>
+Accept: application/json
+
+<> 2022-01-30T105903.400.json
+
+###
+
 POST https://127.0.0.1:8000/api/videos
 Content-Type: application/ld+json
 
