@@ -11,49 +11,47 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Menu</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Commande</a>
-                    </li>
+
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Film</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Materiele</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Clé USB</a></li>
+                            <li><a class="dropdown-item" href="#">Chargeur</a></li>
+                            <li><a class="dropdown-item" href="#">Ecouteur</a></li>
                         </ul>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">serie</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Film</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_film_new')}}">Nouveauté</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_film_top')}}">Plus vue</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_film_popular')}}">Populaire</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_film_genre')}}">Genre</a></li>
                         </ul>
                     </li>
+
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Serie</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                            <li><a class="dropdown-item" href="{{ path('user_serie_new')}}">Nouveauté</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_serie_top')}}">Plus vue</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_serie_popular')}}">Populaire</a></li>
+                            <li><a class="dropdown-item" href="{{ path('user_serie_genre')}}">Genre</a></li>
+                        </ul>
+                    </li>
+
+
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Vendeur</a>
+                        <a class="nav-link active" aria-current="page" href="{{ path('admin_index')}}">Vendeur</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Administrateur</a>
+                        <a class="nav-link active" aria-current="page" href="{{ path('admin_index')}}">Administrateur</a>
                     </li>
 
                 </ul>
             </div>
         </div>
- {{ form_start(form) }}
-            <div class="row">
-            <div class="col" style="weight:500px">
-                   {{ form_row(form.mots) }}
-            </div>
-            <div class="col">
-                   {{ form_row(form.recherche) }}
-            </div>
-            </div>
-            {{ form_end(form) }}
+
             </nav>
 </header>
 

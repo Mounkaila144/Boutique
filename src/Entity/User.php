@@ -50,8 +50,6 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     private $isVerified = false;
 
-    #[ORM\Column(type: 'boolean')]
-    private $isStatus;
 
     public function getId(): ?int
     {
@@ -195,15 +193,4 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         return $this;
     }
 
-    public function getIsStatus(): ?bool
-    {
-        return $this->isStatus;
-    }
-
-    public function setIsStatus(bool $isStatus): self
-    {
-        $this->isStatus = $isStatus;
-
-        return $this;
-    }
 }

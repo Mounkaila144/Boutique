@@ -50,12 +50,6 @@ class RegistrationFormType extends AbstractType
             ->add('nom')
             ->add('prenom')
             ->add('adresse')
-            ->add('isStatus',ChoiceType::class,[
-                'choices'=>[
-                    'user'=>true,
-                    'vendeur'=>false
-                ]
-            ])
             ->add('lon')
             ->add('lat')
         ;

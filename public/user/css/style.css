@@ -8,11 +8,13 @@
     user-select: none;
 }
 .film{
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 0px;
     border-radius: 10px;
     max-width: 720px;
+
 }
+
 .bt{
     margin-bottom: 20px;
 }
