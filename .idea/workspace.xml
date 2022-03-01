@@ -1,26 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="pagination">
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/film/GenreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/serie/GenreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/User/serie/SerieController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/film/genre.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/film/genrefilm.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/serie/genre.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/serie/genreSerie.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/user/serie/index.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/userl.html.twig" afterDir="false" />
+    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="intergration de the movie movie db">
+      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Moins.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Moyenne.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Detail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/Film.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreFilm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/typefilm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/OnlyDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Recherche.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreIndex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreSerie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/Serie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/produis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/Api/Api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/App/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/App/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/App/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/BtnSidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/Btnderoulan.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/Home.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/NestedBtn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/Pagination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/ShoppingList/ShoppingList.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/Harry.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/OnlyCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/ProductCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/V4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/expenses/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/expenses/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/BtnTop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/HederDesing.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/Search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/header/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/produit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/sidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/user/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/styles/_setting.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/styles/components/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/styles/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/react.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Boutique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boutique.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Admin/scss/_demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_demo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/user/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/user/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Service/BetaseriesServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/BetaseriesServices.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/template/header.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/template/header.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +83,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTTP Request" />
+        <option value="TypeScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -49,7 +99,7 @@
     </option>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="service_betaserie" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,6 +111,12 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/js/app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -204,6 +260,9 @@
       <path value="$PROJECT_DIR$/vendor/scienta/doctrine-json-functions" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-components" />
       <path value="$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
   <component name="ProjectId" id="23p5VI33ByinUkDc7UQ3hvXPv5Y" />
@@ -214,28 +273,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Commerce" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="actions.on.save" />
+    <property name="ts.external.directory.path" value="C:\xampps\htdocs\projet\Boutique\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates\user" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\src\Controller\User" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates\user\film" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\src\Controller\User\film" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components\card" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Serie" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates\user" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\templates\user\template" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\public\user\css" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\public\user\img" />
-      <recent name="C:\wamp64s\www\project\Boutique\public\Admin" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Serie" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\styles" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components\Cart" />
     </key>
   </component>
   <component name="RunAnythingContextRecentDirectoryCache">
@@ -294,7 +357,28 @@
       <workItem from="1644052063102" duration="40986000" />
       <workItem from="1644151613433" duration="18362000" />
       <workItem from="1644317408855" duration="6757000" />
-      <workItem from="1644445609997" duration="3242000" />
+      <workItem from="1644445609997" duration="31119000" />
+      <workItem from="1644570174007" duration="14249000" />
+      <workItem from="1644593457710" duration="15092000" />
+      <workItem from="1644611482517" duration="10877000" />
+      <workItem from="1644655474244" duration="53336000" />
+      <workItem from="1644749868922" duration="16673000" />
+      <workItem from="1644862233745" duration="5091000" />
+      <workItem from="1645120474926" duration="340000" />
+      <workItem from="1645121889259" duration="28527000" />
+      <workItem from="1645256572269" duration="48662000" />
+      <workItem from="1645440010450" duration="2814000" />
+      <workItem from="1645444794299" duration="2062000" />
+      <workItem from="1645475726570" duration="3700000" />
+      <workItem from="1645513812030" duration="5386000" />
+      <workItem from="1645601176639" duration="6152000" />
+      <workItem from="1645783911658" duration="49338000" />
+      <workItem from="1645987974160" duration="346000" />
+      <workItem from="1646031388660" duration="11979000" />
+      <workItem from="1646049243339" duration="1648000" />
+      <workItem from="1646053677818" duration="181000" />
+      <workItem from="1646053882622" duration="39802000" />
+      <workItem from="1646149981560" duration="10478000" />
     </task>
     <task id="LOCAL-00001" summary="interfasse administrateur fini rest la gesion des article">
       <created>1643534050206</created>
@@ -310,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643990888647</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="intergration de the movie movie db">
+      <created>1644487027897</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1644487027897</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +421,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="interfasse administrateur fini rest la gesion des article" />
     <MESSAGE value="pagination" />
-    <option name="LAST_COMMIT_MESSAGE" value="pagination" />
+    <MESSAGE value="intergration de the movie movie db" />
+    <option name="LAST_COMMIT_MESSAGE" value="intergration de the movie movie db" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
