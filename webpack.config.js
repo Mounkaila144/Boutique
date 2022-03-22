@@ -74,4 +74,15 @@ Encore
     //.autoProvidejQuery()
 ;
 
+const path = require('path');
+
+module.exports = {
+    loaders: [{
+        test: /.html$/,
+        loader: 'html-loader?attrs[]=video:hy'
+    }, {
+        test: /.mp4$/,
+        loader: 'url?limit=10000&mimetype=video/mp4'
+    }]
+};
 module.exports = Encore.getWebpackConfig();

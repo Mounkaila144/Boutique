@@ -6,7 +6,7 @@ import {pink} from "@mui/material/colors";
 
 const GenreSerieIndex = () => {
     const k = [
-        {"name": "Action & Adventure", "id":10759,"path":"Action & Adventure"},
+        {"name": "Action & Adventure", "id":10759,"path":"Action&Adventure"},
         {"name": "Animation", "id":16,"path":"Animation"},
         {"name": "Comédie", "id":35,"path":"Comedy"},
         {"name": "Crime", "id":80,"path":"Crime"},
@@ -17,10 +17,10 @@ const GenreSerieIndex = () => {
         {"name": "Mystère", "id":9648,"path":"Mystery"},
         {"name": "News", "id":10763,"path":"News"},
         {"name": "Reality", "id":10764,"path":"Reality"},
-        {"name": "Science-Fiction & Fantastique", "id":10765,"path":"Sci-Fi & Fantasy"},
+        {"name": "Science-Fiction & Fantastique", "id":10765,"path":"Sci-Fi&Fantasy"},
         {"name": "Soap", "id":10766,"path":"Soap"},
         {"name": "Talk", "id":10767,"path":"Talk"},
-        {"name": "War & Politics", "id":10768,"path":"War & Politics"},
+        {"name": "War & Politics", "id":10768,"path":"War&Politics"},
         {"name": "Western", "id":37,"path":"Western"}
     ]
     let navigate = useNavigate();

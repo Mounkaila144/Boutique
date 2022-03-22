@@ -20,8 +20,8 @@ const GenreFilmIndex = () => {
         {"path": "Music", "id": 10402, "name": "Musique"},
         {"path": "Mystery", "id": 9648, "name": "Mystère"},
         {"path": "Romance", "id": 10749, "name": "Romance"},
-        {"path": "Science Fiction", "id": 878, "name": "Science-Fiction"},
-        {"path": "TV Movie", "id": 10770, "name": "Téléfilm"},
+        {"path": "ScienceFiction", "id": 878, "name": "Science-Fiction"},
+        {"path": "TVMovie", "id": 10770, "name": "Téléfilm"},
         {"path": "Thriller", "id": 53, "name": "Thriller"},
         {"path": "War", "id": 10752, "name": "Guerre"},
         {"path": "Western", "id": 37, "name": "Western"}

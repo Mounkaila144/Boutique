@@ -1,0 +1,312 @@
+Index: templates/admin/article/index.html.twig
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{% extends 'base.html.twig' %}\r\n\r\n{% block title %}article index{% endblock %}\r\n\r\n{% block body %}\r\n    <h2>\r\n        article\r\n    </h2>\r\n\r\n\r\n    <table class=\"table table-bordered\">\r\n        <thead>\r\n        <tr>\r\n            <th>Id</th>\r\n            <th>Nom</th>\r\n            <th>Image</th>\r\n            <th>Prix d'Achat</th>\r\n            <th>Prix de Vente</th>\r\n            <th>Quantite Initial</th>\r\n            <th>Quantite Restant</th>\r\n            <th></th>\r\n        </tr>\r\n        </thead>\r\n        <tbody>\r\n        {% for article in articles %}\r\n            <tr>\r\n                <td>{{ article.id }}</td>\r\n                <td>{{ article.nom }}</td>\r\n                <td class=\"w-5\"><img style=\"width: 70px;\" class=\"img-fluid img-thumbnail\" src=\"{{ vich_uploader_asset(article, 'imageFile') }}\" alt=\"{{ article.nom }}\"></td>\r\n                <td>{{ article.prisAchat }}</td>\r\n                <td>{{ article.prisVente }}</td>\r\n                <td>{{ article.quantiteInitial }}</td>\r\n                <td>{{ article.quantiteRestant }}</td>\r\n                <td>\r\n                    <a href=\"{{ path('admin_article_edit', {'id': article.id}) }}\">\r\n                        <button type=\"submit\" class=\"btn btn-primary me-2\">Moifier</button>\r\n                    </a>\r\n                </td>\r\n                <td>\r\n                    <form method=\"post\" action=\"{{ path('admin_article_delete', {'id': article.id}) }}\"\r\n                          onsubmit=\"return confirm('Voulez vous vaiment suprimer?');\">\r\n                        <input type=\"hidden\" name=\"_token\" value=\"{{ csrf_token('delete' ~ article.id) }}\">\r\n                        <button type=\"submit\" class=\"btn btn-danger me-2\">Suprimer</button>\r\n                    </form>\r\n                </td>\r\n            </tr>\r\n        {% else %}\r\n            <tr>\r\n                <td colspan=\"7\">no records found</td>\r\n            </tr>\r\n        {% endfor %}\r\n        </tbody>\r\n    </table>\r\n\r\n    <a href=\"{{ path('admin_article_new') }}\">\r\n        <button type=\"submit\" class=\"btn btn-primary me-2\">Ajouter</button>\r\n    </a>\r\n{% endblock %}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/templates/admin/article/index.html.twig b/templates/admin/article/index.html.twig
+--- a/templates/admin/article/index.html.twig	
++++ b/templates/admin/article/index.html.twig	
+@@ -8,51 +8,44 @@
+     </h2>
+ 
+ 
+-    <table class="table table-bordered">
+-        <thead>
+-        <tr>
+-            <th>Id</th>
+-            <th>Nom</th>
+-            <th>Image</th>
+-            <th>Prix d'Achat</th>
+-            <th>Prix de Vente</th>
+-            <th>Quantite Initial</th>
+-            <th>Quantite Restant</th>
+-            <th></th>
+-        </tr>
+-        </thead>
+-        <tbody>
+-        {% for article in articles %}
+-            <tr>
+-                <td>{{ article.id }}</td>
+-                <td>{{ article.nom }}</td>
+-                <td class="w-5"><img style="width: 70px;" class="img-fluid img-thumbnail" src="{{ vich_uploader_asset(article, 'imageFile') }}" alt="{{ article.nom }}"></td>
+-                <td>{{ article.prisAchat }}</td>
+-                <td>{{ article.prisVente }}</td>
+-                <td>{{ article.quantiteInitial }}</td>
+-                <td>{{ article.quantiteRestant }}</td>
+-                <td>
+-                    <a href="{{ path('admin_article_edit', {'id': article.id}) }}">
+-                        <button type="submit" class="btn btn-primary me-2">Moifier</button>
+-                    </a>
+-                </td>
+-                <td>
+-                    <form method="post" action="{{ path('admin_article_delete', {'id': article.id}) }}"
+-                          onsubmit="return confirm('Voulez vous vaiment suprimer?');">
+-                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ article.id) }}">
+-                        <button type="submit" class="btn btn-danger me-2">Suprimer</button>
+-                    </form>
+-                </td>
+-            </tr>
+-        {% else %}
+-            <tr>
+-                <td colspan="7">no records found</td>
+-            </tr>
+-        {% endfor %}
+-        </tbody>
+-    </table>
++                    <table class="table table-bordered">
++                            <thead>
++                            <tr>
++                                <th>Id</th>
++                                <th>Nom</th>
++                                <th>Prix d'Achat</th>
++                                <th>Prix de Vente</th>
++                                <th>Quantite Initial</th>
++                                <th>Quantite Restant</th>
++                                <th></th>
++                            </tr>
++                            </thead>
++                            <tbody>
++                            {% for article in articles %}
++                                <tr>
++                                    <td>{{ article.id }}</td>
++                                    <td>{{ article.nom }}</td>
++                                    <td>{{ article.prisAchat }}</td>
++                                    <td>{{ article.prisVente }}</td>
++                                    <td>{{ article.quantiteInitial }}</td>
++                                    <td>{{ article.quantiteRestant }}</td>
++                                <td>
++                                    <a href="{{ path('admin_article_edit', {'id': article.id}) }}"><button type="submit" class="btn btn-primary me-2">Moifier</button></a>
++                                </td>
++                                <td>
++                                    <form method="post" action="{{ path('admin_article_delete', {'id': article.id}) }}" onsubmit="return confirm('Voulez vous vaiment suprimer?');">
++                                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ article.id) }}">
++                                        <button type="submit" class="btn btn-danger me-2">Suprimer</button>
++                                    </form>
++                                </td>
++                            </tr>
++                        {% else %}
++                            <tr>
++                                <td colspan="7">no records found</td>
++                            </tr>
++                        {% endfor %}
++                        </tbody>
++                    </table>
+ 
+-    <a href="{{ path('admin_article_new') }}">
+-        <button type="submit" class="btn btn-primary me-2">Ajouter</button>
+-    </a>
++    <a href="{{ path('admin_article_new') }}"><button type="submit" class="btn btn-primary me-2">Ajouter</button></a>
+ {% endblock %}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"5677fabb-768b-4360-8f30-f39876551f2b\" name=\"Default Changelist\" comment=\"fin\">\r\n      <change afterPath=\"$PROJECT_DIR$/assets/js/Page/Materiel/DetailMateriel.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/assets/js/Page/Materiel/Test.js\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/assets/js/image/article/6224a0993ad74896443521.png\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/assets/js/image/article/6224a12fccc74173099781.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/assets/js/image/article/6224a1a3ed8ac943851480.jpg\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/public/EventSubscriber/EventSubscriber.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/templates/EasyAdmin/dashboard.html.twig\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.babelrc\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.gitignore\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gitignore\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/Boutique.iml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/Boutique.iml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/php.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/php.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/assets/js/Page/Materiel/Original.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/assets/js/Page/Materiel/Original.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/assets/js/components/Home.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/assets/js/components/Home.jsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/assets/js/routes.js\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/assets/js/routes.js\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/composer.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/composer.lock\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/config/bundles.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/config/bundles.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/config/packages/liip_imagine.yaml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/config/packages/liip_imagine.yaml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/migrations/Version20220304204426.php\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/package.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/package.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Entity/Article.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Entity/Article.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/Entity/User.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Entity/User.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/symfony.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/symfony.lock\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\" doNotAsk=\"true\" synchronizationState=\"SYNCHRONIZE\">\r\n    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTTP Request\" />\r\n        <option value=\"TypeScript File\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"JavaScript File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PUSH_TAGS\">\r\n      <GitPushTagMode>\r\n        <option name=\"argument\" value=\"--tags\" />\r\n        <option name=\"title\" value=\"All\" />\r\n      </GitPushTagMode>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"service_betaserie\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"file://$PROJECT_DIR$/assets/js/app.js\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/package.json\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/config/packages/security.yaml\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php\" root0=\"FORCE_HIGHLIGHTING\" root1=\"FORCE_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-php81\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-mbstring\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-access\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/process\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-profiler-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/phpunit-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/password-hasher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/options-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mime\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/maker-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/notifier\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/monolog-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-kernel\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/mailer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/intl\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-client-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-foundation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/form\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/http-client\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/framework-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/finder\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/flex\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/expression-language\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/filesystem\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dom-crawler\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/error-handler\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dotenv\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-file-iterator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-code-coverage\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/doctrine-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/deprecation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-invoker\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/dependency-injection\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/manifest\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpstan/phpdoc-parser\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpspec/prophecy\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/type-resolver\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/laminas/laminas-code\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/egulias/email-validator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpdocumentor/reflection-common\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfonycasts/verify-email-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/myclabs/deep-copy\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/monolog/monolog\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/twig/twig\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/resource-operations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/recursion-context\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/twig/extra-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-reflector\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/object-enumerator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/friendsofphp/proxy-manager-lts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sensio/framework-extra-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/webmozart/assert\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/nikic/php-parser\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/version\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/type\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/event-dispatcher\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/diff\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/complexity\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/container\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/comparator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/log\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/lines-of-code\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/global-state\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/exporter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/link\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/environment\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/orm\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/migrations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/lexer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/instantiator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/psr/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/code-unit\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/sebastian/cli-parser\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/sql-formatter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/persistence\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/deprecations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/dbal\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/common\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/collections\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/inflector\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/event-manager\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/annotations\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-text-template\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/composer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/css-selector\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/console\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/debug-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/config\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/cache-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/browser-kit\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/asset\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/phpunit\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phpunit/php-timer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/web-link\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-exporter\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/var-dumper\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/translation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/validator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/twig-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/serializer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-http\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-csrf\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/string\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/stopwatch\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/service-contracts\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/routing\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-core\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/security-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/runtime\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/property-info\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/theseer/tokenizer\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/yaml\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/proxy-manager-bridge\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/phar-io/version\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/willdurand/negotiation\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/fig/link-util\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/api-platform/core\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/nelmio/cors-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/scienta/doctrine-json-functions\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/knplabs/knp-components\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/knplabs/knp-paginator-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/fakerphp/faker\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/data-fixtures\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/vich/uploader-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/jms/metadata\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/polyfill-uuid\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/symfony/uid\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/liip/imagine-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/imagine/imagine\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/behat/transliterator\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle\" />\r\n      <path value=\"$PROJECT_DIR$/vendor/gedmo/doctrine-extensions\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"23p5VI33ByinUkDc7UQ3hvXPv5Y\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/assets/js/Page/Materiel\" />\r\n    <property name=\"list.type.of.created.stylesheet\" value=\"CSS\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\r\n    <property name=\"php.override.implement.member.chooser.php.doc\" value=\"NONE\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"http.proxy\" />\r\n    <property name=\"ts.external.directory.path\" value=\"C:\\xampps\\htdocs\\projet\\Boutique\\node_modules\\typescript\\lib\" />\r\n    <property name=\"vue.rearranger.settings.migration\" value=\"true\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Materiel\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Video\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\components\\card\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Video\\Serie\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Video\\Film\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Video\\Film\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\Page\\Video\\Serie\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\components\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\styles\" />\r\n      <recent name=\"C:\\xampps\\htdocs\\projet\\Boutique\\assets\\js\\components\\Cart\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunAnythingContextRecentDirectoryCache\">\r\n    <option name=\"paths\">\r\n      <recentPaths value=\"$PROJECT_DIR$\" />\r\n    </option>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"HTTP Request.requet | #1\">\r\n    <configuration name=\"requet | #1\" type=\"HttpClient.HttpRequestRunConfigurationType\" factoryName=\"HTTP Request\" temporary=\"true\" nameIsGenerated=\"true\" path=\"$PROJECT_DIR$/public/requet.http\" requestIdentifier=\"#1\" runType=\"Run single request\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"requet#1\" type=\"HttpClient.HttpRequestRunConfigurationType\" factoryName=\"HTTP Request\" temporary=\"true\" path=\"$PROJECT_DIR$/public/requet.http\" runType=\"Run single request\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"phpunit.xml.dist\" type=\"PHPUnitRunConfigurationType\" factoryName=\"PHPUnit\">\r\n      <TestRunner scope=\"XML\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"HTTP Request.requet | #1\" />\r\n        <item itemvalue=\"HTTP Request.requet#1\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"SvnConfiguration\">\r\n    <configuration>C:\\Users\\Asus\\AppData\\Roaming\\Subversion</configuration>\r\n    <myIsUseDefaultProxy>true</myIsUseDefaultProxy>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"5677fabb-768b-4360-8f30-f39876551f2b\" name=\"Default Changelist\" comment=\"\" />\r\n      <created>1642418209776</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1642418209776</updated>\r\n      <workItem from=\"1642418211107\" duration=\"53037000\" />\r\n      <workItem from=\"1642713555730\" duration=\"910000\" />\r\n      <workItem from=\"1642799354980\" duration=\"808000\" />\r\n      <workItem from=\"1642883497973\" duration=\"1083000\" />\r\n      <workItem from=\"1642884817705\" duration=\"2093000\" />\r\n      <workItem from=\"1643014607655\" duration=\"810000\" />\r\n      <workItem from=\"1643015547011\" duration=\"501000\" />\r\n      <workItem from=\"1643019304521\" duration=\"1093000\" />\r\n      <workItem from=\"1643061545520\" duration=\"5939000\" />\r\n      <workItem from=\"1643147723283\" duration=\"1030000\" />\r\n      <workItem from=\"1643187353075\" duration=\"639000\" />\r\n      <workItem from=\"1643214687888\" duration=\"836000\" />\r\n      <workItem from=\"1643281816462\" duration=\"8632000\" />\r\n      <workItem from=\"1643443541505\" duration=\"7619000\" />\r\n      <workItem from=\"1643485338517\" duration=\"37618000\" />\r\n      <workItem from=\"1643638703823\" duration=\"1433000\" />\r\n      <workItem from=\"1643640419281\" duration=\"5271000\" />\r\n      <workItem from=\"1643655319133\" duration=\"321000\" />\r\n      <workItem from=\"1643655889224\" duration=\"8692000\" />\r\n      <workItem from=\"1643925151892\" duration=\"2459000\" />\r\n      <workItem from=\"1643964775111\" duration=\"6609000\" />\r\n      <workItem from=\"1643972634780\" duration=\"20808000\" />\r\n      <workItem from=\"1644052063102\" duration=\"40986000\" />\r\n      <workItem from=\"1644151613433\" duration=\"18362000\" />\r\n      <workItem from=\"1644317408855\" duration=\"6757000\" />\r\n      <workItem from=\"1644445609997\" duration=\"31119000\" />\r\n      <workItem from=\"1644570174007\" duration=\"14249000\" />\r\n      <workItem from=\"1644593457710\" duration=\"15092000\" />\r\n      <workItem from=\"1644611482517\" duration=\"10877000\" />\r\n      <workItem from=\"1644655474244\" duration=\"53336000\" />\r\n      <workItem from=\"1644749868922\" duration=\"16673000\" />\r\n      <workItem from=\"1644862233745\" duration=\"5091000\" />\r\n      <workItem from=\"1645120474926\" duration=\"340000\" />\r\n      <workItem from=\"1645121889259\" duration=\"28527000\" />\r\n      <workItem from=\"1645256572269\" duration=\"48662000\" />\r\n      <workItem from=\"1645440010450\" duration=\"2814000\" />\r\n      <workItem from=\"1645444794299\" duration=\"2062000\" />\r\n      <workItem from=\"1645475726570\" duration=\"3700000\" />\r\n      <workItem from=\"1645513812030\" duration=\"5386000\" />\r\n      <workItem from=\"1645601176639\" duration=\"6152000\" />\r\n      <workItem from=\"1645783911658\" duration=\"49338000\" />\r\n      <workItem from=\"1645987974160\" duration=\"346000\" />\r\n      <workItem from=\"1646031388660\" duration=\"11979000\" />\r\n      <workItem from=\"1646049243339\" duration=\"1648000\" />\r\n      <workItem from=\"1646053677818\" duration=\"181000\" />\r\n      <workItem from=\"1646053882622\" duration=\"39802000\" />\r\n      <workItem from=\"1646149981560\" duration=\"20087000\" />\r\n      <workItem from=\"1646332969309\" duration=\"1997000\" />\r\n      <workItem from=\"1646343288032\" duration=\"15774000\" />\r\n      <workItem from=\"1646412232557\" duration=\"38733000\" />\r\n      <workItem from=\"1646637006735\" duration=\"27498000\" />\r\n      <workItem from=\"1646726995738\" duration=\"28485000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"interfasse administrateur fini rest la gesion des article\">\r\n      <created>1643534050206</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1643534050206</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"pagination\">\r\n      <created>1643990888647</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1643990888647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"intergration de the movie movie db\">\r\n      <created>1644487027897</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1644487027897</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"installation du bundle pour uploader les image en base de donner\">\r\n      <created>1646174041536</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1646174041552</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"nous allon essayer easy admin\">\r\n      <created>1646639564972</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1646639564972</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"interfasse administrateur fini rest la gesion des article\" />\r\n    <MESSAGE value=\"pagination\" />\r\n    <MESSAGE value=\"intergration de the movie movie db\" />\r\n    <MESSAGE value=\"installation du bundle pour uploader les image en base de donner\" />\r\n    <MESSAGE value=\"nous allon essayer easy admin\" />\r\n    <MESSAGE value=\"fin\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"fin\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	
++++ b/.idea/workspace.xml	
+@@ -2,31 +2,122 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="fin">
+-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/DetailMateriel.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Test.js" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a0993ad74896443521.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a12fccc74173099781.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a1a3ed8ac943851480.jpg" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/public/EventSubscriber/EventSubscriber.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/templates/EasyAdmin/dashboard.html.twig" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/Boutique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boutique.iml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/js/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/Home.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/assets/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/routes.js" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/liip_imagine.yaml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/migrations/Version20220304204426.php" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/AdminController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ArticleController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ClientController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/FilmController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MangaController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/RegistrationVendeurController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/SerieController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/TypeController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/VendeurController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/CreateMediaObjectAction.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/MainController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/ReactController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/User/film/FilmController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/User/film/GenreController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/User/serie/GenreController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Controller/User/serie/SerieController.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Entity/Type.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/Extension/SecurityExtension.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/FilmType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/MangaType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/SearchVideoType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/SerieType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/TypeType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/Kernel.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Repository/ArticleRepository.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Repository/TypeRepository.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Repository/VideoRepository.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Security/EmailVerifier.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Security/UserAuthenticator.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Service/BetaseriesServices.php" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/EasyAdmin/dashboard.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/article/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/localisation.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/client/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/film/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/manga/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/serie/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/template/css.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/template/footer.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/template/navbar.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/template/script.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/template/sidebar.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/type/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/_delete_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/_form.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/edit.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/localisation.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/new.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/admin/vendeur/show.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/crypto.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/loca.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/localisation.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/main/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/pagination.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/react.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/react/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/registration/confirmation_email.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/search/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/film/genre.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/film/genrefilm.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/film/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/serie/genre.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/serie/genreSerie.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/serie/index.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/user/template/header.html.twig" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/templates/userl.html.twig" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -70,10 +161,9 @@
+     </file-type-list>
+   </component>
+   <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$PROJECT_DIR$/assets/js/app.js" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
+     <setting file="file://$PROJECT_DIR$/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/assets/js/app.js" root0="FORCE_HIGHLIGHTING" />
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+@@ -233,6 +323,9 @@
+     </include_path>
+   </component>
+   <component name="ProjectId" id="23p5VI33ByinUkDc7UQ3hvXPv5Y" />
++  <component name="ProjectLevelVcsManager">
++    <ConfirmationsSetting value="2" id="Add" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -242,7 +335,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/js/Page/Materiel" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+     <property name="list.type.of.created.stylesheet" value="CSS" />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+@@ -254,11 +347,11 @@
+   </component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="C:\xampps\htdocs\projet\Boutique" />
++      <recent name="C:\xampps\htdocs\projet\Boutique\templates" />
++      <recent name="C:\xampps\htdocs\projet\Boutique\src\Entity" />
+       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Materiel" />
+       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video" />
+-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components\card" />
+-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Serie" />
+-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
+     </key>
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
+@@ -355,6 +448,7 @@
+       <workItem from="1646412232557" duration="38733000" />
+       <workItem from="1646637006735" duration="27498000" />
+       <workItem from="1646726995738" duration="28485000" />
++      <workItem from="1646834791129" duration="3200000" />
+     </task>
+     <task id="LOCAL-00001" summary="interfasse administrateur fini rest la gesion des article">
+       <created>1643534050206</created>

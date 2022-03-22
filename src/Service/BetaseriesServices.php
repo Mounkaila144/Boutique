@@ -4,6 +4,7 @@
 namespace App\Service;
 
 
+use App\Entity\Commande;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class BetaseriesServices
@@ -15,14 +16,9 @@ class BetaseriesServices
         $this->client = $client;
     }
 
-    public function getFilm(string $type,int $page): array
+    public function getFilm(Commande $commande): array
     {
-        $response = $this->client->request(
-            'GET',
-            "https://api.themoviedb.org/3/movie/$type?page=$page&api_key=7220ce44fed075da0c331991d5c64c0d&language=fr-FR"
-        );
 
-        $result = $response->toArray();
 
         return $result['results'];
     }

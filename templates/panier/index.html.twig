@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Commande index{% endblock %}
+
+{% block body %}
+    <h1>Commande index</h1>
+    {% for commande in commandes %}
+        <table class="table">
+        <thead>
+        <tr>
+            <th>Client</th>
+            <th>prix Total</th>
+            <th>actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>{{ commande.user }}</td>
+            <td>{{commande.panier.cartTotal }} CFA</td>
+            <td>
+                <a href="{{ path('app_panier_show', {'id': commande.id}) }}">show</a>
+            </td>
+        </tr>
+    {% else %}
+        <tr>
+            <td colspan="3">no records found</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+
+    <a href="{{ path('app_panier_new') }}">Create new</a>
+{% endblock %}

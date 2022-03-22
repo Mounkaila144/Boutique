@@ -1,108 +1,65 @@
 import * as React from 'react';
+import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import Header from "../components/header/index";
-import {Grid} from "@mui/material";
-import * as PropTypes from "prop-types";
-import MovieCard from "../components/card/card";
-import {pink} from "@mui/material/colors";
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Grid';
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {Backdrop, CircularProgress} from "@mui/material";
+import PubCard from "../components/card/PubCard";
 
-function Item(props) {
-    return null;
-}
-
-Item.propTypes = {
-    elevation: PropTypes.number,
-    children: PropTypes.node
-};
-
-
-export default function Menu() {
+const Item = styled(Paper)(({ theme }) => ({
+    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+    ...theme.typography.body2,
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+}));
+export default function Menu(){
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [film, setFilm] = useState([]);
+    const [product, setProduct] = useState([]);
+    const [pagecount, setpagecount] = useState([]);
 
-    // Remarque : le tableau vide de dépendances [] indique
-    // que useEffect ne s’exécutera qu’une fois, un peu comme
-    // componentDidMount()
+    const url = `https://127.0.0.1:8000/api/pubs.json?`
+    const getData = async () => {
+        axios
+            .get(url)
+            .then((res) => {
+                setIsLoaded(true);
+                setProduct(res.data);
+                setpagecount(50)
+
+            }, (error) => {
+                setIsLoaded(true);
+                setError(error);
+            })
+    }
     useEffect(() => {
-        fetch("https://api.themoviedb.org/3/movie/popular?page=1&api_key=7220ce44fed075da0c331991d5c64c0d&language=fr-FR")
-            .then(res => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setFilm(result["results"]);
-                },
-                // Remarque : il faut gérer les erreurs ici plutôt que dans
-                // un bloc catch() afin que nous n’avalions pas les exceptions
-                // dues à de véritables bugs dans les composants.
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            )
+        getData()
+        window.scrollTo(0, 0);
     }, [])
-    return (
-        <Box
-            sx={{
-                width: '100%',
-                '& > .MuiBox-root > .MuiBox-root': {
-                    p: 1,
-                    borderRadius: 2,
-                    fontSize: '0.875rem',
-                    fontWeight: '700',
-                },
-            }}
-        >
-            <Box
-                sx={{
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(1, 1fr)',
-                    gap: 1,
-                    gridTemplateRows: 'auto',
-                    gridTemplateAreas: `"header header header header"
-        "main main . sidebar"`,
-                }}
-            >
-                <Box sx={{gridArea: 'header'}}><Header/></Box>
-                <Box sx={{
-                    bgcolor: pink[800],
-                    display: 'grid',
-                    columnGap: 2,
-                    rowGap: 1,
-                    boxShadow: 6,
-                    gridTemplateColumns: {
-                        xs: '1fr 1fr',
-                        sm: '1fr 1fr 1fr',
-                        md: '1fr 1fr 1fr 1fr',
-                        lg: '1fr 1fr 1fr 1fr 1fr'
-                    },
-                }}>{
-                    film.map((films) => (
-                            <MovieCard title={films.title} img={films.poster_path}/>
-                        )
-                    )}
+    if (error) {
+        return <h1>Erreur de chargement veuiller recharger la page</h1>
+    } else if (!isLoaded) {
+        return (
+            <Backdrop
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={true}>
+                <CircularProgress color="inherit" />
+            </Backdrop>
+        )
+    } else {
+        return(
+            <Grid container spacing={{xs: 1, md: 2}} columns={{xs: 12, sm: 12, md: 12}}>
+                {product.map((products) => (
+                    <Grid item xs={12} sm={12} md={4} >
+                 <PubCard products={products} />
+                    </Grid>
 
+                ))}
+            </Grid>
 
-                </Box>
-                <Box sx={{gridArea: 'sidebar', bgcolor: 'error.main'}}>
-                    <Box sx={{
-                        bgcolor: pink[800],
-                        display: 'grid',
-                        columnGap: 2,
-                        rowGap: 1,
-                        gridTemplateColumns: {
-                            xs: '0fr ',
-                            sm: '1fr ',
-                            md: '1fr 1fr',
-                            lg: '1fr 1fr'
-                        },
-                    }}>
+        )
 
-                    </Box>
-                </Box>
-            </Box>
-        </Box>
-    );
-}
+}}

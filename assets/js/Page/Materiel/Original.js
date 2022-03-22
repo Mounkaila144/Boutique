@@ -1,25 +1,36 @@
 import React, {useEffect, useState} from 'react';
-import ProductCard from "../../components/card/ProductCard";
 import axios from "axios";
-import {Pagination} from "@mui/material";
+import {Grid, Pagination} from "@mui/material";
+import ProductCard from "../../components/card/ProductCard";
+import Button from "@mui/material/Button";
+import {pink} from "@mui/material/colors";
+import {Link} from "react-router-dom";
+import MaterialCard from "../../components/card/MaterialCard";
+import {SearchField} from "@react-spectrum/searchfield";
+import Search from "../../components/header/Search";
 
 const Original = () => {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [product, setProduct] = useState([]);
-    const [pagecount, setpagecount] = useState([]);
+    const [pagecount, setpagecount] = useState(0);
     const [page, setPage] = React.useState(1);
 
 
-    const url=`https://api.themoviedb.org/3/movie/popular?page=${page}&api_key=7220ce44fed075da0c331991d5c64c0d&language=fr-FR`
+    const url=`https://127.0.0.1:8000/api/articles.json?page=${page}`
     const getData =async () => {
         axios
-            .get(url)
+            .get(url,{
+                headers:{
+                    "name":"",
+                    "password":""
+                }
+            })
             .then(
                 (res) => {
                     setIsLoaded(true);
-                    setProduct(res.data['results']);
+                    setProduct(res.data);
                     setpagecount(50)
 
                 },
@@ -40,12 +51,24 @@ const Original = () => {
     }
         return (
             <>
-                {
-                    product.map((products) => (
-                            <ProductCard title={products.title} img={`https://image.tmdb.org/t/p/w500${products.poster_path}/photo`}/>
-                        )
-                    )
-                }
+                <Grid container spacing={{xs: 1, md: 1}} columns={{xs: 12, sm: 12, md: 12}}>
+                    <Grid item xs={8} sm={5} md={3} width={30}>
+
+                        <Search/>
+
+                    </Grid>
+                </Grid>
+                <Grid container spacing={{xs: 1, md: 1}} columns={{xs: 12, sm: 12, md: 12}}>
+                    {product.map((products) => (
+                        <Grid item xs={6} sm={4} md={2}>
+                                <MaterialCard sx={{boxShadow: 6,}}
+                                              products={products}
+                                />
+                        </Grid>
+
+                    ))}
+                </Grid>
+
 
                 <Pagination count={pagecount} page={page} onChange={handleChange}  color="primary" />
 

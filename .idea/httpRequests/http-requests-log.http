@@ -1,3 +1,124 @@
+GET https://httpbin.org/ip
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/tests.json
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/tests
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/tests.json
+
+###
+
+GET https://127.0.0.1:8000/api/tests
+
+###
+
+GET https://httpbin.org/ip
+Accept: application/json
+
+###
+
+GET https://httpbin.org/ip
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/articles
+
+###
+
+GET https://127.0.0.1:8000/api/articles.json
+
+###
+
+GET https://127.0.0.1:8000/api/articles.json
+Accept: application/json+ld
+
+###
+
+GET https://127.0.0.1:8000/api/articles.json?page=1
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/article.json?page=1
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/article?page=1
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/article?page=1
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/pubs?page=1
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/pubs.json
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/pubs.json
+Accept: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/pubs.json
+Content-Type: application/json
+
+###
+
+GET https://127.0.0.1:8000/api/pubs
+Content-Type: application/json
+
+###
+
+POST https://127.0.0.1:8000/api/commandes.json
+Content-Type: application/json
+
+{"user": 4,
+  "panier": [
+    "string"
+  ]}
+
+###
+
+POST https://127.0.0.1:8000/api/commandes
+Content-Type: application/json
+
+{"user": 4,
+  "panier": [
+    "string"
+  ]}
+
+###
+
+POST https://127.0.0.1:8000/api/commandes
+Content-Type: application/json
+
+{"user": 55,
+  "panier": [
+    "string"
+  ]}
+
+###
+
 GET http://aaapi.cgi?q={query}-!{syear},{eyear}-!{snfrate},{enfrate}-!{simdbrate},{eimdbrate}-!{genreid}-!{vtype}-!{audio}-!{subtitle}-!{imdbvotes}-!{downloadable}&t=ns&cl={clist}&st=adv&ob={sortby}&p={page}&sa={andor}
 
 ###

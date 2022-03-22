@@ -1,4 +1,4 @@
-import {pink} from "@mui/material/colors";
+import {grey} from "@mui/material/colors";
 import * as React from 'react';
 import {styled, useTheme} from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -54,47 +54,8 @@ const pages = {
     "serie": ["Film", "top", "new", "popular"],
     "Film": ["Serie", "top", "new", "popular"]
 };
-const Search = styled('div')(({theme}) => ({
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.black, 0.15),
-    '&:hover': {
-        backgroundColor: alpha(theme.palette.common.black, 0.25),
-    },
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-        marginLeft: theme.spacing(1),
-        width: 'auto',
-    },
-}));
 
-const SearchIconWrapper = styled('div')(({theme}) => ({
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-}));
 
-const StyledInputBase = styled(InputBase)(({theme}) => ({
-    color: 'inherit',
-    '& .MuiInputBase-input': {
-        padding: theme.spacing(1, 1, 1, 0),
-        // vertical padding + font size from searchIcon
-        paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-        transition: theme.transitions.create('width'),
-        width: '100%',
-        [theme.breakpoints.up('sm')]: {
-            width: '12ch',
-            '&:focus': {
-                width: '20ch',
-            },
-        },
-    },
-}));
 const DrawerHeader = styled('div')(({theme}) => ({
     display: 'flex',
     alignItems: 'center',
@@ -133,20 +94,20 @@ export default function HeaderDesing(props) {
     return (
         <Box sx={{display: 'flex'}}>
             <AppBar position="fixed" open={open} sx={{
-                backgroundColor: pink[800],
+                backgroundColor: grey[900],
                 borderRadius: 2
             }}>
                 <Toolbar>
                     <IconButton color="inherit" aria-label="open drawer"
                                 onClick={handleDrawerOpen} edge="start"
-                                sx={{mr: 2, ...(open && {display: 'none'})}}
+                                sx={{mr: 2, ...(open && {display: 'none'}),display: {xm: 'flex', md: 'none'}}}
                     >
                         <MenuIcon/>
                     </IconButton>
                     <Typography variant="h6" noWrap component="div" sx={{display: {xs: 'none', md: 'flex'}}}>
                         {props.logo}
                     </Typography>
-                    <Box sx={{flexGrow: 1, display: {xs: 'none', sm: 'flex'}}}>
+                    <Box sx={{flexGrow: 1, display: {xs: 'none', md: 'flex'}}}>
                         {props.btnflexsm}
 
 
@@ -156,12 +117,13 @@ export default function HeaderDesing(props) {
             </AppBar>
             <Drawer
                 sx={{
+                    display: {xm: 'flex', md: 'none'},
                     width: drawerWidth,
                     flexShrink: 0,
                     '& .MuiDrawer-paper': {
                         width: drawerWidth,
                         boxSizing: 'border-box',
-                        backgroundColor: pink[800],
+                        backgroundColor: grey[800],
                         borderRadius: 2,
                         color: "white"
                     },
@@ -176,7 +138,29 @@ export default function HeaderDesing(props) {
                     </IconButton>
                 </DrawerHeader>
                 <Divider/>
-                    {props.btnsidebar}
+                <List>
+                    <NestedBtn name={"Menu"} link={"top"}/>
+                    <NestedList name={"Film"}>
+                        <NestedBtn setOpen={setOpen} name={"Populair"} link={"film/popular"}/>
+                        <NestedBtn setOpen={setOpen} name={"Nouveauté"} link={"film/new"}/>
+                        <NestedBtn setOpen={setOpen} name={"plus vue"} link={"film/top"}/>
+                        <NestedBtn setOpen={setOpen} name={"Trier par genre"} link={"film/genrelist"}/>
+                    </NestedList>
+                    <NestedList name={"Serie"}>
+                        <NestedBtn setOpen={setOpen} name={"Populair"} link={"serie/popular"}/>
+                        <NestedBtn setOpen={setOpen} name={"Nouveauté"} link={"serie/new"}/>
+                        <NestedBtn setOpen={setOpen} name={"plus vue"} link={"serie/top"}/>
+                        <NestedBtn setOpen={setOpen} name={"Trier par genre"} link={"serie/genrelist"}/>
+                    </NestedList>
+
+                    <NestedList name={"Materiel"}>
+                        <NestedBtn setOpen={setOpen} name={"Original"} link={"original"}/>
+                        <NestedBtn setOpen={setOpen} name={"Moyenne"} link={"moyenne"}/>
+                        <NestedBtn setOpen={setOpen} name={"Moins chere"} link={"moins"}/>
+                    </NestedList>
+
+
+                </List>
             </Drawer>
 
         </Box>

@@ -13,17 +13,23 @@ class AppFixtures extends Fixture
     public function load(ObjectManager $manager): void
     {
         $faker=Factory::create("fr_FR");
-        for ($i=0;$i<=50;$i++){
+        for ($i=0;$i<=10;$i++){
         $article = new Article();
-        $article->setNom($faker->userName)
+        $article
+                ->setNom($faker->userName)
                 ->setPrisAchat($faker->numberBetween(3000,500))
-                ->setPrisVente($faker->numberBetween(3000,500))
+                ->setPrice($faker->numberBetween(3000,500))
                 ->setQuantiteInitial($faker->numberBetween(10,100))
-                ->setQuantiteRestant($faker->numberBetween(10,100)) ;
+                ->setQuantiteRestant($faker->numberBetween(10,100))
+                ->setQuantiteRestant($faker->numberBetween(10,100))
+                ->setImageName("img-20200827-wa0036-6228dc345c657757454691.jpg")
+
+        ;
         $manager->persist($article);
 
         $user=new User();
         $user->setNom($faker->name)
+            ->setUsername($faker->name)
             ->setAdresse($faker->address)
             ->setEmail($faker->email)
             ->setIsVerified(true)

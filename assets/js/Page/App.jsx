@@ -1,17 +1,18 @@
 import * as React from 'react';
 import * as PropTypes from "prop-types";
 import {useEffect, useState} from "react";
-import { Outlet, Link } from "react-router-dom";
+import {Outlet, Link, UNSAFE_RouteContext} from "react-router-dom";
 import ProductCard from "../components/card/ProductCard";
 import HeaderPhone from "../components/header/App";
 import Home from "../components/Home";
-import {pink} from "@mui/material/colors";
+import {green, pink} from "@mui/material/colors";
 import {bindTrigger} from "material-ui-popup-state";
 import Button from "@mui/material/Button";
 import {Pagination} from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 export default function App() {
+    const [cart, updateCart] = useState([])
     const styles = (theme) => ({
         root: {
             padding: theme.spacing(1),
@@ -26,24 +27,12 @@ export default function App() {
             },
         },
     });
-    const [lien,setlien] = useState(0);
-    useEffect(()=>{
-        setlien(window.location.pathname)
-    },[<Outlet/>])
-    console.log(lien)
     return (
         <Home
         top={<HeaderPhone/>}
         left={
 
             <Outlet/>
-        }
-        rigth={
-            <>
-                <Typography>
-                    bonjour
-                </Typography>
-            </>
         }
         />
     );

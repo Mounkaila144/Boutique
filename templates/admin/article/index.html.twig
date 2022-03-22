@@ -15,6 +15,7 @@
                                 <th>Nom</th>
                                 <th>Prix d'Achat</th>
                                 <th>Prix de Vente</th>
+                                <th>Image</th>
                                 <th>Quantite Initial</th>
                                 <th>Quantite Restant</th>
                                 <th></th>
@@ -25,8 +26,9 @@
                                 <tr>
                                     <td>{{ article.id }}</td>
                                     <td>{{ article.nom }}</td>
-                                    <td>{{ article.prisAchat }}</td>
-                                    <td>{{ article.prisVente }}</td>
+                                    <td>{{ article.prisAchat }} CFA</td>
+                                    <td>{{ article.price }} CFA</td>
+                                    <td class="w-5"><img style="width: 70px; height: 70px" class="img-fluid img-thumbnail" src="{{ vich_uploader_asset(article, 'imageFile') }}" alt="{{ article.nom }}"></td>
                                     <td>{{ article.quantiteInitial }}</td>
                                     <td>{{ article.quantiteRestant }}</td>
                                 <td>

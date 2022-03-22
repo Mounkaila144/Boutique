@@ -1,74 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="intergration de the movie movie db">
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Moins.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Moyenne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Detail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/Film.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreFilm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/typefilm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/OnlyDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Recherche.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreIndex.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreSerie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/Serie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/Page/produis.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/Api/Api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/App/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/App/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/App/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/BtnSidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/Btnderoulan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/Home.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/NestedBtn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/Pagination.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/ShoppingList/ShoppingList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/card/Harry.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/card/OnlyCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/card/ProductCard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/card/V4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/card/card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/expenses/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/expenses/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/BtnTop.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/HederDesing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/Search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/header/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/ivoice/produit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/sidebar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/components/user/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/routes.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/styles/_setting.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/styles/components/_header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/styles/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/react.html.twig" afterDir="false" />
+    <list default="true" id="5677fabb-768b-4360-8f30-f39876551f2b" name="Default Changelist" comment="fin">
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/DetailMateriel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Panier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/DetailSaisaon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/buttonsaison.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/app/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/Cart/Data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/MaterialCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/card/PubCard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/components/grid/Grid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/features/counter/counterSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a0993ad74896443521.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a12fccc74173099781.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/image/article/6224a1a3ed8ac943851480.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/videos/baca.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/js/videos/h.mp4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DataPersister/DataPersister.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ExceptionSubscriber/ExceptionSubscriber.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PubType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/CommandeRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PubRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/pub/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Boutique.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Boutique.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Materiel/Original.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Video/Detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Video/Detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Video/Film/Film.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/Film.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreFilm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Video/Film/GenreIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreIndex.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/Page/Video/Serie/GenreIndex.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/Api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/Api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/NestedBtn.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/NestedBtn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/card/ProductCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/card/ProductCard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/header/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/header/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/header/HederDesing.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/header/HederDesing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/components/header/Search.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components/header/Search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/api_platform.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/api_platform.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/vich_uploader.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220109150913.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220109170755.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220111095741.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220117164251.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220117165851.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20220128150808.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/scss/_demo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/scss/_demo.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/Admin/vendors/base/vendor.bundle.base.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/user/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/user/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/requet.http" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/FilmController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/MangaController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/SerieController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/TypeController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Article.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Type.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Video.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/ArticleType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/ArticleType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/FilmType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MangaType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SearchVideoType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/SerieType.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/TypeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/CommandeType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/BetaseriesServices.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/BetaseriesServices.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/article/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/_form.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/article/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/article/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/template/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/template/navbar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/template/sidebar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/template/sidebar.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/userl.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userl.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,10 +139,9 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/assets/js/app.js" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/packages/security.yaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -263,9 +288,24 @@
       <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
       <path value="$PROJECT_DIR$/vendor/doctrine/data-fixtures" />
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
+      <path value="$PROJECT_DIR$/vendor/vich/uploader-bundle" />
+      <path value="$PROJECT_DIR$/vendor/jms/metadata" />
+      <path value="$PROJECT_DIR$/vendor/behat/transliterator" />
+      <path value="$PROJECT_DIR$/vendor/stof/doctrine-extensions-bundle" />
+      <path value="$PROJECT_DIR$/vendor/gedmo/doctrine-extensions" />
+      <path value="$PROJECT_DIR$/vendor/lexik/jwt-authentication-bundle" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/clock" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="23p5VI33ByinUkDc7UQ3hvXPv5Y" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -275,30 +315,30 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Commerce" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../crtptage" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="actions.on.save" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\xampps\htdocs\projet\Boutique\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video" />
       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components\card" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Serie" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\videos" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin\pub" />
+      <recent name="C:\xampps\htdocs\projet\Boutique" />
+      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampps\htdocs\projet\Boutique\templates\admin" />
       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Film" />
       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\Page\Video\Serie" />
       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components" />
       <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\styles" />
-      <recent name="C:\xampps\htdocs\projet\Boutique\assets\js\components\Cart" />
     </key>
   </component>
   <component name="RunAnythingContextRecentDirectoryCache">
@@ -306,11 +346,17 @@
       <recentPaths value="$PROJECT_DIR$" />
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.requet | #1">
-    <configuration name="requet | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/public/requet.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.get-requests | GET request with a header (2)">
+    <configuration name="get-requests | GET request with a header (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" requestIdentifier="GET request with a header" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="requet#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/public/requet.http" runType="Run single request">
+    <configuration name="get-requests | GET request with a header (2)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" requestIdentifier="GET request with a header" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="get-requests | GET request with a header" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" requestIdentifier="GET request with a header" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="requet | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/public/requet.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -319,8 +365,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.get-requests | GET request with a header (2)" />
         <item itemvalue="HTTP Request.requet | #1" />
-        <item itemvalue="HTTP Request.requet#1" />
+        <item itemvalue="HTTP Request.get-requests | GET request with a header (1)" />
+        <item itemvalue="HTTP Request.get-requests | GET request with a header" />
       </list>
     </recent_temporary>
   </component>
@@ -379,6 +427,22 @@
       <workItem from="1646053677818" duration="181000" />
       <workItem from="1646053882622" duration="39802000" />
       <workItem from="1646149981560" duration="10478000" />
+      <workItem from="1646902149723" duration="6885000" />
+      <workItem from="1646919140491" duration="10583000" />
+      <workItem from="1646941596580" duration="26700000" />
+      <workItem from="1647023858429" duration="10608000" />
+      <workItem from="1647104694393" duration="42166000" />
+      <workItem from="1647283923584" duration="22249000" />
+      <workItem from="1647377593668" duration="2717000" />
+      <workItem from="1647419527373" duration="33765000" />
+      <workItem from="1647518880852" duration="19115000" />
+      <workItem from="1647588012610" duration="862000" />
+      <workItem from="1647588918390" duration="59000" />
+      <workItem from="1647589002501" duration="1594000" />
+      <workItem from="1647590909179" duration="103000" />
+      <workItem from="1647591063813" duration="3548000" />
+      <workItem from="1647596060245" duration="148328000" />
+      <workItem from="1647972001747" duration="739000" />
     </task>
     <task id="LOCAL-00001" summary="interfasse administrateur fini rest la gesion des article">
       <created>1643534050206</created>

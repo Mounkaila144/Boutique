@@ -5,14 +5,16 @@ import ListItemText from "@mui/material/ListItemText";
 import * as React from "react";
 import {useNavigate} from "react-router-dom";
 
-const NestedBtn = ({name, link}) => {
+const NestedBtn = ({name, link,setOpen}) => {
     let navigate = useNavigate();
+    const handleDrawerClose = () => {
+        navigate(link)
+        setOpen(false);
+    };
     return (
         <ListItemButton
             sx={{pl: 4}}
-           onClick={() => {
-            navigate(`${link}`);
-        }}
+           onClick={handleDrawerClose}
         >
             <ListItemIcon>
                 <StarBorder/>

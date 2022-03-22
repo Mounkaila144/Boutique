@@ -6,6 +6,7 @@ use App\Entity\Article;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Vich\UploaderBundle\Form\Type\VichFileType;
 
 class ArticleType extends AbstractType
 {
@@ -14,9 +15,17 @@ class ArticleType extends AbstractType
         $builder
             ->add('nom')
             ->add('prisAchat')
-            ->add('prisVente')
+            ->add('price')
             ->add('quantiteInitial')
             ->add('quantiteRestant')
+            ->add('imageFile', VichFileType::class, [
+                'required' => false,
+                'allow_delete' => true,
+                'delete_label' => '...',
+                'download_uri' => '...',
+                'download_label' => '...',
+                'asset_helper' => true,
+            ])
         ;
     }
 

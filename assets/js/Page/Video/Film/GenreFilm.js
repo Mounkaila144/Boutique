@@ -1,9 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import ProductCard from "../../../components/card/ProductCard";
 import axios from "axios";
-import {Pagination} from "@mui/material";
+import {Backdrop, CircularProgress, Grid, Pagination} from "@mui/material";
+import Button from "@mui/material/Button";
+import {pink} from "@mui/material/colors";
+import {useNavigate} from "react-router-dom";
 
-const GenreFilm = ({genre}) => {
+const GenreFilm = ({genre,type}) => {
 
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
@@ -11,7 +14,7 @@ const GenreFilm = ({genre}) => {
     const [pagecount, setpagecount] = useState([]);
     const [page, setPage] = React.useState(1);
 
-    const url = `https://api.themoviedb.org/3/discover/movie?api_key=7220ce44fed075da0c331991d5c64c0d&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genre}`
+    const url = `https://api.themoviedb.org/3/discover/${type}?api_key=7220ce44fed075da0c331991d5c64c0d&language=fr-FR&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}&with_genres=${genre}`
     const getData = async () => {
         axios
             .get(url)
@@ -32,25 +35,74 @@ const GenreFilm = ({genre}) => {
     useEffect(() => {
         getData()
         window.scrollTo(0, 0);
-    }, [page])
+    }, [page, type])
 
     const handleChange = (event, value) => {
         setPage(value);
     }
-    return (
-        <>
-            {
-                product.map((products) => (
-                        <ProductCard title={products.title} img={`https://image.tmdb.org/t/p/w500${products.poster_path}`}/>
-                    )
-                )
-            }
+    const titre = (text) => {
+        let result = text.substr(0, 15)
+        if (text.length > 15) {
+            return `${result}...`
+        } else {
+            return result
+        }
+    }
+    let navigate = useNavigate();
+
+    function handleClick() {
+        if (type === "movie") {
+            navigate(`/react/film/recherche`)
+
+        } else {
+            navigate(`/react/serie/recherche`)
+        }
+    }
+
+    if (error) {
+        return <h1>Erreur de chargement veuiller recharger la page</h1>
+    } else if (!isLoaded) {
+        return (
+            <Backdrop
+                sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+                open={true}>
+                <CircularProgress color="inherit" />
+            </Backdrop>
+        )
+    } else {
+        return (<>
+            <Button
+                variant="contained"
+                sx={{
+                    my: 2, color: 'white', display: 'block', backgroundColor: pink[900], marginLeft: 2
+                }}
+                onClick={handleClick}
+
+            >
+                Rechercher une film
+            </Button>
+            <Grid container spacing={{xs: 1, md: 1}} columns={{xs: 12, sm: 12, md: 12}}>
+                {product.map((products) => (
+                    <Grid item xs={6} sm={4} md={2}>
+
+                        <ProductCard sx={{boxShadow: 6,}}
+                                     products={products}
+                                     type={type}
+
+                        />
+                    </Grid>
+
+                ))}
+            </Grid>
+
 
             <Pagination count={pagecount} page={page} onChange={handleChange} color="primary"/>
 
-        </>
-    )
+        </>)
+
+    }
 
 };
+
 
 export default GenreFilm;

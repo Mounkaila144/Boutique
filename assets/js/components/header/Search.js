@@ -3,15 +3,17 @@ import {styled} from "@mui/material/styles";
 import {alpha, InputBase} from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import {useForm} from "react-hook-form";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 
 
 const Search = ({setsearch}) => {
     const Search = styled('div')(({theme}) => ({
         position: 'relative',
         borderRadius: theme.shape.borderRadius,
-        backgroundColor:alpha(theme.palette.common.white, 0.60),
+        backgroundColor: alpha(theme.palette.common.white, 0.60),
         '&:hover': {
-            backgroundColor:  "white",
+            backgroundColor: "white",
         },
         marginLeft: 0,
         width: '100%',
@@ -47,23 +49,27 @@ const Search = ({setsearch}) => {
             },
         },
     }));
-    const { register, handleSubmit } = useForm();
+    const {register, handleSubmit} = useForm();
     const handleRegistration = (data) => setsearch(data.name);
 
-    return (
-        <Search>
-            <SearchIconWrapper>
-                <SearchIcon/>
-            </SearchIconWrapper>
-            <form onSubmit={handleSubmit(handleRegistration)}>
-                <StyledInputBase
-                    placeholder="Search…"
-                    inputProps={{'aria-label': 'search'}}
-                    name="name" {...register('name')}
-                />
-        </form>
-        </Search>
+    return (<Box sx={{
 
+        marginBottom: 1,
+        width: 300
+    }}
+    >
+        <Search>
+
+                <form onSubmit={handleSubmit(handleRegistration)}>
+                    <StyledInputBase
+                        placeholder="Reherche…"
+                        inputProps={{'aria-label': 'Recherche'}}
+                        name="name" {...register('name')}
+                    />
+                </form>
+
+        </Search>
+</Box>
     );
 };
 
